@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('_f_w1_font_wrapper_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,6 +62,11 @@ $(document).ready(function(){initNavTree('_f_w1_font_wrapper_8h_source.html','')
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_ac872cc841d227412ffa88904578d265.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_48fc7d41683e1b5c69b11a6adcb338ff.html">FW1FontWrapper</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">FW1FontWrapper.h</div>  </div>
@@ -709,7 +693,6 @@ $(document).ready(function(){initNavTree('_f_w1_font_wrapper_8h_source.html','')
 <div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160; </div>
 <div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;<span class="preprocessor">#endif// IncludeGuard__FW1_FW1FontWrapper_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="a_f_w1_font_wrapper_8h_html_a3c8f80ddd32f56e7417c19e850644df2ae5d4b82231ad17a5213c787ded3e3955"><div class="ttname"><a href="_f_w1_font_wrapper_8h.html#a3c8f80ddd32f56e7417c19e850644df2ae5d4b82231ad17a5213c787ded3e3955">FW1_NOGEOMETRYSHADER</a></div><div class="ttdeci">@ FW1_NOGEOMETRYSHADER</div><div class="ttdoc">No geometry shader is used when drawing glyphs. Indexed quads are constructed on the CPU instead of i...</div><div class="ttdef"><b>Definition:</b> FW1FontWrapper.h:58</div></div>
 <div class="ttc" id="astruct_f_w1___g_l_y_p_h_v_e_r_t_e_x_html_af5379a5018ff9cc40788b9cfb2fe52bc"><div class="ttname"><a href="struct_f_w1___g_l_y_p_h_v_e_r_t_e_x.html#af5379a5018ff9cc40788b9cfb2fe52bc">FW1_GLYPHVERTEX::GlyphColor</a></div><div class="ttdeci">UINT32 GlyphColor</div><div class="ttdoc">The color of the glyph, as 0xAaBbGgRr.</div><div class="ttdef"><b>Definition:</b> FW1FontWrapper.h:181</div></div>
 <div class="ttc" id="a_f_w1_font_wrapper_8h_html_a3c8f80ddd32f56e7417c19e850644df2a0942e0a1b11adf51d46819e5d891b539"><div class="ttname"><a href="_f_w1_font_wrapper_8h.html#a3c8f80ddd32f56e7417c19e850644df2a0942e0a1b11adf51d46819e5d891b539">FW1_CLIPRECT</a></div><div class="ttdeci">@ FW1_CLIPRECT</div><div class="ttdoc">If a clip-rect is specified together with this flag, all text is clipped to inside the specified rect...</div><div class="ttdef"><b>Definition:</b> FW1FontWrapper.h:55</div></div>
@@ -793,13 +776,10 @@ $(document).ready(function(){initNavTree('_f_w1_font_wrapper_8h_source.html','')
 <div class="ttc" id="astruct_f_w1___g_l_y_p_h_v_e_r_t_e_x_html_a1b9bfe3094bd8b98c939c6a93ac5c3d3"><div class="ttname"><a href="struct_f_w1___g_l_y_p_h_v_e_r_t_e_x.html#a1b9bfe3094bd8b98c939c6a93ac5c3d3">FW1_GLYPHVERTEX::PositionY</a></div><div class="ttdeci">FLOAT PositionY</div><div class="ttdoc">The base Y position of the glyph.</div><div class="ttdef"><b>Definition:</b> FW1FontWrapper.h:175</div></div>
 <div class="ttc" id="a_f_w1_font_wrapper_8h_html_a3c8f80ddd32f56e7417c19e850644df2afd0c0e1822b8110b0f2cd4ec7b13e32c"><div class="ttname"><a href="_f_w1_font_wrapper_8h.html#a3c8f80ddd32f56e7417c19e850644df2afd0c0e1822b8110b0f2cd4ec7b13e32c">FW1_TOP</a></div><div class="ttdeci">@ FW1_TOP</div><div class="ttdoc">Text is aligned at the top of the layout-box. This is the default.</div><div class="ttdef"><b>Definition:</b> FW1FontWrapper.h:40</div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_ac872cc841d227412ffa88904578d265.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_48fc7d41683e1b5c69b11a6adcb338ff.html">FW1FontWrapper</a></li><li class="navelem"><a class="el" href="_f_w1_font_wrapper_8h.html">FW1FontWrapper.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

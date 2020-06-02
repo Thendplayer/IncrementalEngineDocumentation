@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('_transformable_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,6 +62,11 @@ $(document).ready(function(){initNavTree('_transformable_8h_source.html',''); in
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Transformable.h</div>  </div>
@@ -167,7 +151,6 @@ $(document).ready(function(){initNavTree('_transformable_8h_source.html',''); in
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ad4bd11cb85395e07d5be25e51674c8fe"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ad4bd11cb85395e07d5be25e51674c8fe">IncrementalEngine::Transformable::SetOrigin</a></div><div class="ttdeci">virtual void SetOrigin(float x, float y)</div><div class="ttdef"><b>Definition:</b> Transformable.cpp:82</div></div>
 <div class="ttc" id="aclass_incremental_engine_1_1_transform_html"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html">IncrementalEngine::Transform</a></div><div class="ttdef"><b>Definition:</b> Transform.h:42</div></div>
 <div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a3d3ee1c11a9a01144ee0c6843f527bd6"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a3d3ee1c11a9a01144ee0c6843f527bd6">IncrementalEngine::Transformable::GetTransform</a></div><div class="ttdeci">const Transform &amp; GetTransform() const</div><div class="ttdef"><b>Definition:</b> Transformable.cpp:140</div></div>
@@ -188,13 +171,10 @@ $(document).ready(function(){initNavTree('_transformable_8h_source.html',''); in
 <div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a24d6569bff487c77cc5ecd12dac242a9"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9">IncrementalEngine::Transformable::SetScale</a></div><div class="ttdeci">virtual void SetScale(float factorX, float factorY)</div><div class="ttdef"><b>Definition:</b> Transformable.cpp:69</div></div>
 <div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ac570a6d69b47ffb53dfb0bd5447dcea4"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ac570a6d69b47ffb53dfb0bd5447dcea4">IncrementalEngine::Transformable::Move</a></div><div class="ttdeci">void Move(float offsetX, float offsetY)</div><div class="ttdef"><b>Definition:</b> Transformable.cpp:115</div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="_transformable_8h.html">Transformable.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>
