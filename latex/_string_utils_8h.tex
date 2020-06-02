@@ -1,0 +1,26 @@
+\hypertarget{_string_utils_8h}{}\doxysection{D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\+String\+Utils.h File Reference}
+\label{_string_utils_8h}\index{D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/StringUtils.h@{D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/StringUtils.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_string_utils_8h_ae176d6deba3ea8b0b916ad5bf587bad4}{String\+As\+W\+C\+H\+A\+R\+\_\+ptr}}(s,  w)~std\+::wstring ws(s.\+begin(), s.\+end()); w = ws.\+c\+\_\+str();
+\item 
+\#define \mbox{\hyperlink{_string_utils_8h_aee750e6ee9c49ccd9b41be0b3d3223b2}{W\+String\+As\+C\+H\+A\+R\+\_\+ptr}}(w,  s)~std\+::string \mbox{\hyperlink{json11_8cpp_a6f94ddd542b6584a9155dca6dff07fdc}{str}}(w.\+begin(), w.\+end()); s = str.\+c\+\_\+str();
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_string_utils_8h_ae176d6deba3ea8b0b916ad5bf587bad4}\label{_string_utils_8h_ae176d6deba3ea8b0b916ad5bf587bad4}} 
+\index{StringUtils.h@{StringUtils.h}!StringAsWCHAR\_ptr@{StringAsWCHAR\_ptr}}
+\index{StringAsWCHAR\_ptr@{StringAsWCHAR\_ptr}!StringUtils.h@{StringUtils.h}}
+\doxysubsubsection{\texorpdfstring{StringAsWCHAR\_ptr}{StringAsWCHAR\_ptr}}
+{\footnotesize\ttfamily \#define String\+As\+W\+C\+H\+A\+R\+\_\+ptr(\begin{DoxyParamCaption}\item[{}]{s,  }\item[{}]{w }\end{DoxyParamCaption})~std\+::wstring ws(s.\+begin(), s.\+end()); w = ws.\+c\+\_\+str();}
+
+\mbox{\Hypertarget{_string_utils_8h_aee750e6ee9c49ccd9b41be0b3d3223b2}\label{_string_utils_8h_aee750e6ee9c49ccd9b41be0b3d3223b2}} 
+\index{StringUtils.h@{StringUtils.h}!WStringAsCHAR\_ptr@{WStringAsCHAR\_ptr}}
+\index{WStringAsCHAR\_ptr@{WStringAsCHAR\_ptr}!StringUtils.h@{StringUtils.h}}
+\doxysubsubsection{\texorpdfstring{WStringAsCHAR\_ptr}{WStringAsCHAR\_ptr}}
+{\footnotesize\ttfamily \#define W\+String\+As\+C\+H\+A\+R\+\_\+ptr(\begin{DoxyParamCaption}\item[{}]{w,  }\item[{}]{s }\end{DoxyParamCaption})~std\+::string \mbox{\hyperlink{json11_8cpp_a6f94ddd542b6584a9155dca6dff07fdc}{str}}(w.\+begin(), w.\+end()); s = str.\+c\+\_\+str();}
+

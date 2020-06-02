@@ -1,0 +1,149 @@
+\hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s}{}\doxysection{F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+MS Struct Reference}
+\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s}\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+
+
+The \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s}{F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+MS}} is used with the I\+F\+W1\+Factory\+::\+Create\+Font\+Wrapper method, and describes settings for the created I\+F\+W1\+Font\+Wrapper object.  
+
+
+
+
+{\ttfamily \#include $<$F\+W1\+Font\+Wrapper.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a86119212b2a47d14701edeabcf4dc724}{Glyph\+Sheet\+Width}}
+\begin{DoxyCompactList}\small\item\em The width of the glyph sheet textures to store glyph images in. 0 defaults to 512. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb1fe74b85703e4f6008038433a20e0c}{Glyph\+Sheet\+Height}}
+\begin{DoxyCompactList}\small\item\em The height of the glyph sheet textures to store glyph images in. 0 defaults to 512. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a7858c594158345735c18f1bedeac82b1}{Max\+Glyph\+Count\+Per\+Sheet}}
+\begin{DoxyCompactList}\small\item\em The maximum number of glyphs per texture. A buffer of {\itshape Max\+Glyph\+Count\+Per\+Sheet $\ast$ 32} bytes is preallocated for each sheet. 0 defaults to 2048. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a5103fe641f87c3465d486b6b0c80f2c0}{Sheet\+Mip\+Levels}}
+\begin{DoxyCompactList}\small\item\em The number of mip-\/levels for the glyph sheet textures. 0 defaults to 1. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_af2c8ae58915e70ae1837c93fcf02eac1}{Anisotropic\+Filtering}}
+\begin{DoxyCompactList}\small\item\em If set to T\+R\+UE, the sampler-\/state is created with anisotropic filtering. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb28166e48a0708a54b33c8065465968}{Max\+Glyph\+Width}}
+\begin{DoxyCompactList}\small\item\em The maximum width of a single glyph. This value is used to decide how large the Direct\+Write render target needs to be, which is used when drawing glyph images to put in the atlas. 0 defaults to 384. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_ac45cd17ced72a5037f3250c631345d10}{Max\+Glyph\+Height}}
+\begin{DoxyCompactList}\small\item\em The maximum height of a single glyph. This value is used to decide how large the Direct\+Write render target needs to be, which is used when drawing glyph images to put in the atlas. 0 defaults to 384. \end{DoxyCompactList}\item 
+B\+O\+OL \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a13102cfc5f4ec71566de9b1cd67512db}{Disable\+Geometry\+Shader}}
+\begin{DoxyCompactList}\small\item\em If set to T\+R\+UE, no geometry shader is used. \end{DoxyCompactList}\item 
+U\+I\+NT \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a1801187d782e38b160afe29b7d703fce}{Vertex\+Buffer\+Size}}
+\begin{DoxyCompactList}\small\item\em The size in bytes of the dynamic vertex buffer to upload glyph vertices to when drawing a string. 0 defaults to 4096 $\ast$ 16.~\newline
+ Each glyph vertex is either 16 or 20 bytes in size, and each glyph requires either 1 or 4 vertices depending on if the geometry shader is used. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_f_w1___d_w_r_i_t_e_f_o_n_t_p_a_r_a_m_s}{F\+W1\+\_\+\+D\+W\+R\+I\+T\+E\+F\+O\+N\+T\+P\+A\+R\+A\+MS}} \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a2d4934d15d633dbad6275056951c1b86}{Default\+Font\+Params}}
+\begin{DoxyCompactList}\small\item\em Description of the default font. See \mbox{\hyperlink{struct_f_w1___d_w_r_i_t_e_f_o_n_t_p_a_r_a_m_s}{F\+W1\+\_\+\+D\+W\+R\+I\+T\+E\+F\+O\+N\+T\+P\+A\+R\+A\+MS}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s}{F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+MS}} is used with the I\+F\+W1\+Factory\+::\+Create\+Font\+Wrapper method, and describes settings for the created I\+F\+W1\+Font\+Wrapper object. 
+
+If a member has the value zero, the default value will be chosen instead. See \mbox{\hyperlink{struct_f_w1___d_w_r_i_t_e_f_o_n_t_p_a_r_a_m_s}{F\+W1\+\_\+\+D\+W\+R\+I\+T\+E\+F\+O\+N\+T\+P\+A\+R\+A\+MS}} for requirements for its members.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_af2c8ae58915e70ae1837c93fcf02eac1}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_af2c8ae58915e70ae1837c93fcf02eac1}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!AnisotropicFiltering@{AnisotropicFiltering}}
+\index{AnisotropicFiltering@{AnisotropicFiltering}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{AnisotropicFiltering}{AnisotropicFiltering}}
+{\footnotesize\ttfamily B\+O\+OL F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Anisotropic\+Filtering}
+
+
+
+If set to T\+R\+UE, the sampler-\/state is created with anisotropic filtering. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a2d4934d15d633dbad6275056951c1b86}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a2d4934d15d633dbad6275056951c1b86}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!DefaultFontParams@{DefaultFontParams}}
+\index{DefaultFontParams@{DefaultFontParams}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{DefaultFontParams}{DefaultFontParams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_w1___d_w_r_i_t_e_f_o_n_t_p_a_r_a_m_s}{F\+W1\+\_\+\+D\+W\+R\+I\+T\+E\+F\+O\+N\+T\+P\+A\+R\+A\+MS}} F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Default\+Font\+Params}
+
+
+
+Description of the default font. See \mbox{\hyperlink{struct_f_w1___d_w_r_i_t_e_f_o_n_t_p_a_r_a_m_s}{F\+W1\+\_\+\+D\+W\+R\+I\+T\+E\+F\+O\+N\+T\+P\+A\+R\+A\+MS}}. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a13102cfc5f4ec71566de9b1cd67512db}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a13102cfc5f4ec71566de9b1cd67512db}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!DisableGeometryShader@{DisableGeometryShader}}
+\index{DisableGeometryShader@{DisableGeometryShader}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{DisableGeometryShader}{DisableGeometryShader}}
+{\footnotesize\ttfamily B\+O\+OL F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Disable\+Geometry\+Shader}
+
+
+
+If set to T\+R\+UE, no geometry shader is used. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb1fe74b85703e4f6008038433a20e0c}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb1fe74b85703e4f6008038433a20e0c}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!GlyphSheetHeight@{GlyphSheetHeight}}
+\index{GlyphSheetHeight@{GlyphSheetHeight}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{GlyphSheetHeight}{GlyphSheetHeight}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Glyph\+Sheet\+Height}
+
+
+
+The height of the glyph sheet textures to store glyph images in. 0 defaults to 512. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a86119212b2a47d14701edeabcf4dc724}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a86119212b2a47d14701edeabcf4dc724}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!GlyphSheetWidth@{GlyphSheetWidth}}
+\index{GlyphSheetWidth@{GlyphSheetWidth}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{GlyphSheetWidth}{GlyphSheetWidth}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Glyph\+Sheet\+Width}
+
+
+
+The width of the glyph sheet textures to store glyph images in. 0 defaults to 512. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a7858c594158345735c18f1bedeac82b1}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a7858c594158345735c18f1bedeac82b1}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!MaxGlyphCountPerSheet@{MaxGlyphCountPerSheet}}
+\index{MaxGlyphCountPerSheet@{MaxGlyphCountPerSheet}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{MaxGlyphCountPerSheet}{MaxGlyphCountPerSheet}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Max\+Glyph\+Count\+Per\+Sheet}
+
+
+
+The maximum number of glyphs per texture. A buffer of {\itshape Max\+Glyph\+Count\+Per\+Sheet $\ast$ 32} bytes is preallocated for each sheet. 0 defaults to 2048. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_ac45cd17ced72a5037f3250c631345d10}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_ac45cd17ced72a5037f3250c631345d10}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!MaxGlyphHeight@{MaxGlyphHeight}}
+\index{MaxGlyphHeight@{MaxGlyphHeight}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{MaxGlyphHeight}{MaxGlyphHeight}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Max\+Glyph\+Height}
+
+
+
+The maximum height of a single glyph. This value is used to decide how large the Direct\+Write render target needs to be, which is used when drawing glyph images to put in the atlas. 0 defaults to 384. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb28166e48a0708a54b33c8065465968}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_acb28166e48a0708a54b33c8065465968}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!MaxGlyphWidth@{MaxGlyphWidth}}
+\index{MaxGlyphWidth@{MaxGlyphWidth}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{MaxGlyphWidth}{MaxGlyphWidth}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Max\+Glyph\+Width}
+
+
+
+The maximum width of a single glyph. This value is used to decide how large the Direct\+Write render target needs to be, which is used when drawing glyph images to put in the atlas. 0 defaults to 384. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a5103fe641f87c3465d486b6b0c80f2c0}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a5103fe641f87c3465d486b6b0c80f2c0}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!SheetMipLevels@{SheetMipLevels}}
+\index{SheetMipLevels@{SheetMipLevels}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{SheetMipLevels}{SheetMipLevels}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Sheet\+Mip\+Levels}
+
+
+
+The number of mip-\/levels for the glyph sheet textures. 0 defaults to 1. 
+
+\mbox{\Hypertarget{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a1801187d782e38b160afe29b7d703fce}\label{struct_f_w1___f_o_n_t_w_r_a_p_p_e_r_c_r_e_a_t_e_p_a_r_a_m_s_a1801187d782e38b160afe29b7d703fce}} 
+\index{FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}!VertexBufferSize@{VertexBufferSize}}
+\index{VertexBufferSize@{VertexBufferSize}!FW1\_FONTWRAPPERCREATEPARAMS@{FW1\_FONTWRAPPERCREATEPARAMS}}
+\doxysubsubsection{\texorpdfstring{VertexBufferSize}{VertexBufferSize}}
+{\footnotesize\ttfamily U\+I\+NT F\+W1\+\_\+\+F\+O\+N\+T\+W\+R\+A\+P\+P\+E\+R\+C\+R\+E\+A\+T\+E\+P\+A\+R\+A\+M\+S\+::\+Vertex\+Buffer\+Size}
+
+
+
+The size in bytes of the dynamic vertex buffer to upload glyph vertices to when drawing a string. 0 defaults to 4096 $\ast$ 16.~\newline
+ Each glyph vertex is either 16 or 20 bytes in size, and each glyph requires either 1 or 4 vertices depending on if the geometry shader is used. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\+Third\+Party/\+F\+W1\+Font\+Wrapper/\mbox{\hyperlink{_f_w1_font_wrapper_8h}{F\+W1\+Font\+Wrapper.\+h}}\end{DoxyCompactItemize}

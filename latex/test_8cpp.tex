@@ -1,0 +1,154 @@
+\hypertarget{test_8cpp}{}\doxysection{D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\+Third\+Party/json11/test.cpp File Reference}
+\label{test_8cpp}\index{D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/ThirdParty/json11/test.cpp@{D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/ThirdParty/json11/test.cpp}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}json11.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_abcd741abd0f6cc661b5a61d628d69e21}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+P\+P\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+C\+O\+DE}}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a5836b356f6e0df20bf6ff792bac11124}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+P\+P\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+C\+O\+DE}}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_ad984e8d943f9bae620cb4a2d82bf1e80}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+N\+D\+A\+L\+O\+N\+E\+\_\+\+M\+A\+IN}}~1
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a9b1b936fa98fa80d1a7972e1337f708f}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}}(name)~static void name()
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a6bf6f531642969a90e9b052a5d391bea}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+RT}}(b)~assert(b)
+\item 
+\#define \mbox{\hyperlink{test_8cpp_ae62ba0aea536c0ea8ff2025283402107}{J\+S\+O\+N11\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+D\+R1467\+\_\+\+C\+A\+N\+A\+RY}}~0
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a31b52ae2ad0ec082c5e67289f9cf83d2}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}}(x)~static\+\_\+assert(std\+::x\+::value, \#x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8cpp_a087c449f5ce3fc223ea1d2cbc0a8901a}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+nothrow\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_aba453360e81660475f919376f4371163}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+nothrow\+\_\+default\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_a370f11ea6a891d53f4e96c36c352d4c2}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+copy\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_aec3ff3e346218e78a8d335892df596ca}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+nothrow\+\_\+move\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_ad31a1413a743ab53c3f71d0e21fd2720}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+copy\+\_\+assignable$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_a048b8dfe405d1a5937952b8cac866cdb}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+nothrow\+\_\+move\+\_\+assignable$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_a11509059ffd81c149369daefac30b1ef}{C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT}} (is\+\_\+nothrow\+\_\+destructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$)
+\item 
+\mbox{\hyperlink{test_8cpp_a327ee13053b38c8c81b2e31ef28154a4}{J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}} (json11\+\_\+test)
+\item 
+int \mbox{\hyperlink{test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test_8cpp_a31b52ae2ad0ec082c5e67289f9cf83d2}\label{test_8cpp_a31b52ae2ad0ec082c5e67289f9cf83d2}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT}{CHECK\_TRAIT}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~static\+\_\+assert(std\+::x\+::value, \#x)}
+
+\mbox{\Hypertarget{test_8cpp_ae62ba0aea536c0ea8ff2025283402107}\label{test_8cpp_ae62ba0aea536c0ea8ff2025283402107}} 
+\index{test.cpp@{test.cpp}!JSON11\_ENABLE\_DR1467\_CANARY@{JSON11\_ENABLE\_DR1467\_CANARY}}
+\index{JSON11\_ENABLE\_DR1467\_CANARY@{JSON11\_ENABLE\_DR1467\_CANARY}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_ENABLE\_DR1467\_CANARY}{JSON11\_ENABLE\_DR1467\_CANARY}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+D\+R1467\+\_\+\+C\+A\+N\+A\+RY~0}
+
+\mbox{\Hypertarget{test_8cpp_a6bf6f531642969a90e9b052a5d391bea}\label{test_8cpp_a6bf6f531642969a90e9b052a5d391bea}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_ASSERT@{JSON11\_TEST\_ASSERT}}
+\index{JSON11\_TEST\_ASSERT@{JSON11\_TEST\_ASSERT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_ASSERT}{JSON11\_TEST\_ASSERT}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{b }\end{DoxyParamCaption})~assert(b)}
+
+\mbox{\Hypertarget{test_8cpp_a9b1b936fa98fa80d1a7972e1337f708f}\label{test_8cpp_a9b1b936fa98fa80d1a7972e1337f708f}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_CASE@{JSON11\_TEST\_CASE}}
+\index{JSON11\_TEST\_CASE@{JSON11\_TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_CASE}{JSON11\_TEST\_CASE}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~static void name()}
+
+\mbox{\Hypertarget{test_8cpp_abcd741abd0f6cc661b5a61d628d69e21}\label{test_8cpp_abcd741abd0f6cc661b5a61d628d69e21}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_CPP\_PREFIX\_CODE@{JSON11\_TEST\_CPP\_PREFIX\_CODE}}
+\index{JSON11\_TEST\_CPP\_PREFIX\_CODE@{JSON11\_TEST\_CPP\_PREFIX\_CODE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_CPP\_PREFIX\_CODE}{JSON11\_TEST\_CPP\_PREFIX\_CODE}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+P\+P\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+C\+O\+DE}
+
+\mbox{\Hypertarget{test_8cpp_a5836b356f6e0df20bf6ff792bac11124}\label{test_8cpp_a5836b356f6e0df20bf6ff792bac11124}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_CPP\_SUFFIX\_CODE@{JSON11\_TEST\_CPP\_SUFFIX\_CODE}}
+\index{JSON11\_TEST\_CPP\_SUFFIX\_CODE@{JSON11\_TEST\_CPP\_SUFFIX\_CODE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_CPP\_SUFFIX\_CODE}{JSON11\_TEST\_CPP\_SUFFIX\_CODE}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+P\+P\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+C\+O\+DE}
+
+\mbox{\Hypertarget{test_8cpp_ad984e8d943f9bae620cb4a2d82bf1e80}\label{test_8cpp_ad984e8d943f9bae620cb4a2d82bf1e80}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_STANDALONE\_MAIN@{JSON11\_TEST\_STANDALONE\_MAIN}}
+\index{JSON11\_TEST\_STANDALONE\_MAIN@{JSON11\_TEST\_STANDALONE\_MAIN}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_STANDALONE\_MAIN}{JSON11\_TEST\_STANDALONE\_MAIN}}
+{\footnotesize\ttfamily \#define J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+N\+D\+A\+L\+O\+N\+E\+\_\+\+M\+A\+IN~1}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test_8cpp_ad31a1413a743ab53c3f71d0e21fd2720}\label{test_8cpp_ad31a1413a743ab53c3f71d0e21fd2720}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+copy\+\_\+assignable$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a370f11ea6a891d53f4e96c36c352d4c2}\label{test_8cpp_a370f11ea6a891d53f4e96c36c352d4c2}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+copy\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a087c449f5ce3fc223ea1d2cbc0a8901a}\label{test_8cpp_a087c449f5ce3fc223ea1d2cbc0a8901a}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+nothrow\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_aba453360e81660475f919376f4371163}\label{test_8cpp_aba453360e81660475f919376f4371163}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+nothrow\+\_\+default\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a11509059ffd81c149369daefac30b1ef}\label{test_8cpp_a11509059ffd81c149369daefac30b1ef}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+nothrow\+\_\+destructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a048b8dfe405d1a5937952b8cac866cdb}\label{test_8cpp_a048b8dfe405d1a5937952b8cac866cdb}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+nothrow\+\_\+move\+\_\+assignable$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_aec3ff3e346218e78a8d335892df596ca}\label{test_8cpp_aec3ff3e346218e78a8d335892df596ca}} 
+\index{test.cpp@{test.cpp}!CHECK\_TRAIT@{CHECK\_TRAIT}}
+\index{CHECK\_TRAIT@{CHECK\_TRAIT}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CHECK\_TRAIT()}{CHECK\_TRAIT()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+T\+R\+A\+IT (\begin{DoxyParamCaption}\item[{is\+\_\+nothrow\+\_\+move\+\_\+constructible$<$ \mbox{\hyperlink{classjson11_1_1_json}{Json}} $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a327ee13053b38c8c81b2e31ef28154a4}\label{test_8cpp_a327ee13053b38c8c81b2e31ef28154a4}} 
+\index{test.cpp@{test.cpp}!JSON11\_TEST\_CASE@{JSON11\_TEST\_CASE}}
+\index{JSON11\_TEST\_CASE@{JSON11\_TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{JSON11\_TEST\_CASE()}{JSON11\_TEST\_CASE()}}
+{\footnotesize\ttfamily J\+S\+O\+N11\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{json11\+\_\+test}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{test.cpp@{test.cpp}!main@{main}}
+\index{main@{main}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+

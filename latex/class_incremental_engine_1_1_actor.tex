@@ -1,0 +1,228 @@
+\hypertarget{class_incremental_engine_1_1_actor}{}\doxysection{Incremental\+Engine\+::Actor Class Reference}
+\label{class_incremental_engine_1_1_actor}\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+
+
+{\ttfamily \#include $<$Actor.\+h$>$}
+
+Inheritance diagram for Incremental\+Engine\+::Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_incremental_engine_1_1_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_incremental_engine_1_1_actor_ab627150352b4385a62f0492eadf7e673}{$\sim$\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_incremental_engine_1_1_actor_a8d68d1e10cdceeb1fc57ed3dfa4fe417}{Init}} ()
+\item 
+virtual void \mbox{\hyperlink{class_incremental_engine_1_1_actor_a61eaeb5c4d48cbb7b34b90baa9081d41}{Update}} ()
+\item 
+virtual H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_incremental_engine_1_1_actor_ad3f695905f9980ed64dc18553c2aae9f}{Draw}} (I\+D3\+D11\+Device\+Context $\ast$device\+Context) override
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_actor_adf6688ced888007314381d6896ccc6b8}{Update\+Recursive}} ()
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_incremental_engine_1_1_actor_a77017129803e160a9ac3920ae673c03a}{Draw\+Recursive}} (I\+D3\+D11\+Device\+Context $\ast$device\+Context)
+\item 
+virtual \mbox{\hyperlink{struct_incremental_engine_1_1_float_rect}{Float\+Rect}} \mbox{\hyperlink{class_incremental_engine_1_1_actor_ab04113cd239eefdfce9bdcf7246d8e51}{Get\+Local\+Bounds}} ()
+\item 
+\mbox{\hyperlink{struct_incremental_engine_1_1_float_rect}{Float\+Rect}} \mbox{\hyperlink{class_incremental_engine_1_1_actor_a05eec992e681bad92881ab7f56ada0cd}{Get\+Global\+Bounds}} ()
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_actor_a4088c77027ed8329108aa17d9c1fa3ec}{Center}} ()
+\item 
+const \mbox{\hyperlink{class_incremental_engine_1_1_transform}{Transform}} \mbox{\hyperlink{class_incremental_engine_1_1_actor_aac79ae6d406d5ea75e0948917e307509}{Get\+World\+Transform}} ()
+\item 
+const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \mbox{\hyperlink{class_incremental_engine_1_1_actor_a16a2fc7183f19ae96f70407782e436e5}{Get\+World\+Position}} ()
+\item 
+const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \mbox{\hyperlink{class_incremental_engine_1_1_actor_aa068740fd1944ce7cf742b5f8fc89d0d}{Get\+World\+Scale}} ()
+\item 
+const float \mbox{\hyperlink{class_incremental_engine_1_1_actor_a1a8e34fad8ad0aa71ed362e81a0bfde8}{Get\+World\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_actor_a71ef22cf7f7cff864f1afa7bd98c6268}{Set\+World\+Position}} (D3\+D\+X\+V\+E\+C\+T\+O\+R2 value)
+\item 
+virtual void \mbox{\hyperlink{class_incremental_engine_1_1_actor_a33af28e219a3c56798ee74d4c0d863a1}{Set\+Position}} (float x, float y) override
+\item 
+virtual void \mbox{\hyperlink{class_incremental_engine_1_1_actor_ae1d9fc22d29fe61747ee7c5e13f53ade}{Set\+Position}} (const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \&position) override
+\item 
+virtual const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \& \mbox{\hyperlink{class_incremental_engine_1_1_actor_a64283892a5c0dfcceb0ff5c48f02fd6a}{Get\+Position}} () const override
+\item 
+\mbox{\hyperlink{class_incremental_engine_1_1_actor}{Actor}} $\ast$ \mbox{\hyperlink{class_incremental_engine_1_1_actor_a6bf0683909f8942d1ee0a3661125a97e}{Get\+Parent}} () const
+\item 
+virtual void \mbox{\hyperlink{class_incremental_engine_1_1_actor_aab14a107296b25964fff2f15f64d38f8}{Set\+Parent}} (\mbox{\hyperlink{class_incremental_engine_1_1_actor}{Actor}} $\ast$value, const bool fix\+World\+Position=true)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_actor_affc4066dd75c67e5f3891d0ab0ba7124}{Set\+Active}} (bool active)
+\item 
+bool \mbox{\hyperlink{class_incremental_engine_1_1_actor_a612099da2ef1db014b60a64923f6203e}{Is\+Active}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_ab627150352b4385a62f0492eadf7e673}\label{class_incremental_engine_1_1_actor_ab627150352b4385a62f0492eadf7e673}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!````~Actor@{$\sim$Actor}}
+\index{````~Actor@{$\sim$Actor}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Actor()}{~Actor()}}
+{\footnotesize\ttfamily Incremental\+Engine\+::\+Actor\+::$\sim$\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a4088c77027ed8329108aa17d9c1fa3ec}\label{class_incremental_engine_1_1_actor_a4088c77027ed8329108aa17d9c1fa3ec}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!Center@{Center}}
+\index{Center@{Center}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{Center()}{Center()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_ad3f695905f9980ed64dc18553c2aae9f}\label{class_incremental_engine_1_1_actor_ad3f695905f9980ed64dc18553c2aae9f}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!Draw@{Draw}}
+\index{Draw@{Draw}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Incremental\+Engine\+::\+Actor\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_incremental_engine_1_1_drawable_a3cec82e926d0f0823cb7139e8d9888de}{Incremental\+Engine\+::\+Drawable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_incremental_engine_1_1_text_a8b2ecba5f9136160f94855eb58cb6854}{Incremental\+Engine\+::\+Text}}, and \mbox{\hyperlink{class_incremental_engine_1_1_sprite_aa4107eb9ce6d1bdab9c47a59d6ba6576}{Incremental\+Engine\+::\+Sprite}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a77017129803e160a9ac3920ae673c03a}\label{class_incremental_engine_1_1_actor_a77017129803e160a9ac3920ae673c03a}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!DrawRecursive@{DrawRecursive}}
+\index{DrawRecursive@{DrawRecursive}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{DrawRecursive()}{DrawRecursive()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Incremental\+Engine\+::\+Actor\+::\+Draw\+Recursive (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a05eec992e681bad92881ab7f56ada0cd}\label{class_incremental_engine_1_1_actor_a05eec992e681bad92881ab7f56ada0cd}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetGlobalBounds@{GetGlobalBounds}}
+\index{GetGlobalBounds@{GetGlobalBounds}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetGlobalBounds()}{GetGlobalBounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_incremental_engine_1_1_float_rect}{Float\+Rect}} Incremental\+Engine\+::\+Actor\+::\+Get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_ab04113cd239eefdfce9bdcf7246d8e51}\label{class_incremental_engine_1_1_actor_ab04113cd239eefdfce9bdcf7246d8e51}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetLocalBounds@{GetLocalBounds}}
+\index{GetLocalBounds@{GetLocalBounds}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetLocalBounds()}{GetLocalBounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_incremental_engine_1_1_float_rect}{Float\+Rect}} Incremental\+Engine\+::\+Actor\+::\+Get\+Local\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_incremental_engine_1_1_text_ab96d87a657de8df4fb42153b3c321924}{Incremental\+Engine\+::\+Text}}, and \mbox{\hyperlink{class_incremental_engine_1_1_sprite_a06f5df3f5aef5c8c5f0be778cd319879}{Incremental\+Engine\+::\+Sprite}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a6bf0683909f8942d1ee0a3661125a97e}\label{class_incremental_engine_1_1_actor_a6bf0683909f8942d1ee0a3661125a97e}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_incremental_engine_1_1_actor}{Actor}} $\ast$ Incremental\+Engine\+::\+Actor\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a64283892a5c0dfcceb0ff5c48f02fd6a}\label{class_incremental_engine_1_1_actor_a64283892a5c0dfcceb0ff5c48f02fd6a}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \& Incremental\+Engine\+::\+Actor\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_incremental_engine_1_1_transformable_ac003ade13baf9b385b9b656df0a8adda}{Incremental\+Engine\+::\+Transformable}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a16a2fc7183f19ae96f70407782e436e5}\label{class_incremental_engine_1_1_actor_a16a2fc7183f19ae96f70407782e436e5}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetWorldPosition@{GetWorldPosition}}
+\index{GetWorldPosition@{GetWorldPosition}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetWorldPosition()}{GetWorldPosition()}}
+{\footnotesize\ttfamily const D3\+D\+X\+V\+E\+C\+T\+O\+R2 Incremental\+Engine\+::\+Actor\+::\+Get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a1a8e34fad8ad0aa71ed362e81a0bfde8}\label{class_incremental_engine_1_1_actor_a1a8e34fad8ad0aa71ed362e81a0bfde8}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetWorldRotation@{GetWorldRotation}}
+\index{GetWorldRotation@{GetWorldRotation}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetWorldRotation()}{GetWorldRotation()}}
+{\footnotesize\ttfamily const float Incremental\+Engine\+::\+Actor\+::\+Get\+World\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_aa068740fd1944ce7cf742b5f8fc89d0d}\label{class_incremental_engine_1_1_actor_aa068740fd1944ce7cf742b5f8fc89d0d}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetWorldScale@{GetWorldScale}}
+\index{GetWorldScale@{GetWorldScale}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetWorldScale()}{GetWorldScale()}}
+{\footnotesize\ttfamily const D3\+D\+X\+V\+E\+C\+T\+O\+R2 Incremental\+Engine\+::\+Actor\+::\+Get\+World\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_aac79ae6d406d5ea75e0948917e307509}\label{class_incremental_engine_1_1_actor_aac79ae6d406d5ea75e0948917e307509}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!GetWorldTransform@{GetWorldTransform}}
+\index{GetWorldTransform@{GetWorldTransform}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{GetWorldTransform()}{GetWorldTransform()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_incremental_engine_1_1_transform}{Transform}} Incremental\+Engine\+::\+Actor\+::\+Get\+World\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a8d68d1e10cdceeb1fc57ed3dfa4fe417}\label{class_incremental_engine_1_1_actor_a8d68d1e10cdceeb1fc57ed3dfa4fe417}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!Init@{Init}}
+\index{Init@{Init}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_incremental_engine_1_1_text_afdb52f87c489035c14a2da715d46f78f}{Incremental\+Engine\+::\+Text}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a612099da2ef1db014b60a64923f6203e}\label{class_incremental_engine_1_1_actor_a612099da2ef1db014b60a64923f6203e}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{IsActive()}{IsActive()}}
+{\footnotesize\ttfamily bool Incremental\+Engine\+::\+Actor\+::\+Is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_affc4066dd75c67e5f3891d0ab0ba7124}\label{class_incremental_engine_1_1_actor_affc4066dd75c67e5f3891d0ab0ba7124}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!SetActive@{SetActive}}
+\index{SetActive@{SetActive}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{SetActive()}{SetActive()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_aab14a107296b25964fff2f15f64d38f8}\label{class_incremental_engine_1_1_actor_aab14a107296b25964fff2f15f64d38f8}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_incremental_engine_1_1_actor}{Actor}} $\ast$}]{value,  }\item[{const bool}]{fix\+World\+Position = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_ae1d9fc22d29fe61747ee7c5e13f53ade}\label{class_incremental_engine_1_1_actor_ae1d9fc22d29fe61747ee7c5e13f53ade}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+D\+X\+V\+E\+C\+T\+O\+R2 \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_incremental_engine_1_1_transformable_aa09579c2c9b2a2b50c7309162fb67d61}{Incremental\+Engine\+::\+Transformable}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a33af28e219a3c56798ee74d4c0d863a1}\label{class_incremental_engine_1_1_actor_a33af28e219a3c56798ee74d4c0d863a1}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_incremental_engine_1_1_transformable_ac1d0cb45ea54907849d64607afb810b5}{Incremental\+Engine\+::\+Transformable}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a71ef22cf7f7cff864f1afa7bd98c6268}\label{class_incremental_engine_1_1_actor_a71ef22cf7f7cff864f1afa7bd98c6268}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!SetWorldPosition@{SetWorldPosition}}
+\index{SetWorldPosition@{SetWorldPosition}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{SetWorldPosition()}{SetWorldPosition()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Set\+World\+Position (\begin{DoxyParamCaption}\item[{D3\+D\+X\+V\+E\+C\+T\+O\+R2}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_a61eaeb5c4d48cbb7b34b90baa9081d41}\label{class_incremental_engine_1_1_actor_a61eaeb5c4d48cbb7b34b90baa9081d41}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!Update@{Update}}
+\index{Update@{Update}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_incremental_engine_1_1_text_aefefd83ae276ab9c2c3252c755da28fd}{Incremental\+Engine\+::\+Text}}, \mbox{\hyperlink{class_incremental_engine_1_1_sprite_a27d848bd6e78b2d6b314b2bac86f3290}{Incremental\+Engine\+::\+Sprite}}, and \mbox{\hyperlink{class_incremental_engine_1_1_button_a71fe2192ee0fdc8899baf8c3649d754c}{Incremental\+Engine\+::\+Button}}.
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_actor_adf6688ced888007314381d6896ccc6b8}\label{class_incremental_engine_1_1_actor_adf6688ced888007314381d6896ccc6b8}} 
+\index{IncrementalEngine::Actor@{IncrementalEngine::Actor}!UpdateRecursive@{UpdateRecursive}}
+\index{UpdateRecursive@{UpdateRecursive}!IncrementalEngine::Actor@{IncrementalEngine::Actor}}
+\doxysubsubsection{\texorpdfstring{UpdateRecursive()}{UpdateRecursive()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+Actor\+::\+Update\+Recursive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\mbox{\hyperlink{_actor_8h}{Actor.\+h}}\item 
+D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\mbox{\hyperlink{_actor_8cpp}{Actor.\+cpp}}\end{DoxyCompactItemize}

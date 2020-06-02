@@ -1,0 +1,133 @@
+\hypertarget{class_incremental_engine_1_1_d3_d_implementation}{}\doxysection{Incremental\+Engine\+::D3\+D\+Implementation Class Reference}
+\label{class_incremental_engine_1_1_d3_d_implementation}\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+
+
+{\ttfamily \#include $<$D3\+D\+Implementation.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a97e6ed642a721a55b7edddab33f66181}{D3\+D\+Implementation}} (\mbox{\hyperlink{struct_incremental_engine_1_1_config}{Config}} config)
+\item 
+virtual \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a09a9133f37140eb8b7dfe0299c47c0b3}{$\sim$\+D3\+D\+Implementation}} ()
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_aa819cfc735a3279366344c537dbf2a67}{Init}} (\mbox{\hyperlink{class_incremental_engine_1_1_render_window}{Render\+Window}} $\ast$render\+Window)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_aca65b844e112b2803123b234e52fa64a}{Begin\+Scene}} (float red, float green, float blue, float alpha)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_acac23b4c1947eaa315ad819b253da6e8}{End\+Scene}} ()
+\item 
+I\+D3\+D11\+Device $\ast$ \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_ae7dd13f52e9af1c48ea58df6b3ce41d4}{Get\+Device}} ()
+\item 
+I\+D3\+D11\+Device\+Context $\ast$ \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_aadb9c1d337e11c26385bd90ccf90da98}{Get\+Device\+Context}} ()
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a437041336a49cb54a185d40eb02437b8}{Get\+Projection\+Matrix}} (D3\+D\+X\+M\+A\+T\+R\+IX \&projection\+Matrix)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a91081fdd144389a3d737caeaaef3db8e}{Get\+World\+Matrix}} (D3\+D\+X\+M\+A\+T\+R\+IX \&world\+Matrix)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a00b36150ca30969fd80e797c0c20b069}{Set\+World\+Matrix}} (D3\+D\+X\+M\+A\+T\+R\+IX \&world\+Matrix)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a85c50cd9451c7fd68f80c2fe02ae2a54}{Get\+Ortho\+Projection\+Matrix}} (D3\+D\+X\+M\+A\+T\+R\+IX \&ortho\+Matrix)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_ac1c3aa9c008e2d5ced5cf366231c833d}{Get\+Video\+Card\+Info}} (char $\ast$card\+Name, int \&memory)
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_a3c3206ab5040940ea4bd463aaad030f0}{Turn\+Z\+Buffer\+On}} ()
+\item 
+void \mbox{\hyperlink{class_incremental_engine_1_1_d3_d_implementation_af4f66b6d32207f96b0fb6a58735b0668}{Turn\+Z\+Buffer\+Off}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a97e6ed642a721a55b7edddab33f66181}\label{class_incremental_engine_1_1_d3_d_implementation_a97e6ed642a721a55b7edddab33f66181}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!D3DImplementation@{D3DImplementation}}
+\index{D3DImplementation@{D3DImplementation}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{D3DImplementation()}{D3DImplementation()}}
+{\footnotesize\ttfamily Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+D3\+D\+Implementation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_incremental_engine_1_1_config}{Config}}}]{config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a09a9133f37140eb8b7dfe0299c47c0b3}\label{class_incremental_engine_1_1_d3_d_implementation_a09a9133f37140eb8b7dfe0299c47c0b3}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!````~D3DImplementation@{$\sim$D3DImplementation}}
+\index{````~D3DImplementation@{$\sim$D3DImplementation}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{$\sim$D3DImplementation()}{~D3DImplementation()}}
+{\footnotesize\ttfamily Incremental\+Engine\+::\+D3\+D\+Implementation\+::$\sim$\+D3\+D\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_aca65b844e112b2803123b234e52fa64a}\label{class_incremental_engine_1_1_d3_d_implementation_aca65b844e112b2803123b234e52fa64a}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!BeginScene@{BeginScene}}
+\index{BeginScene@{BeginScene}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{BeginScene()}{BeginScene()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Begin\+Scene (\begin{DoxyParamCaption}\item[{float}]{red,  }\item[{float}]{green,  }\item[{float}]{blue,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_acac23b4c1947eaa315ad819b253da6e8}\label{class_incremental_engine_1_1_d3_d_implementation_acac23b4c1947eaa315ad819b253da6e8}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!EndScene@{EndScene}}
+\index{EndScene@{EndScene}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{EndScene()}{EndScene()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+End\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_ae7dd13f52e9af1c48ea58df6b3ce41d4}\label{class_incremental_engine_1_1_d3_d_implementation_ae7dd13f52e9af1c48ea58df6b3ce41d4}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetDevice@{GetDevice}}
+\index{GetDevice@{GetDevice}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetDevice()}{GetDevice()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device $\ast$ Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_aadb9c1d337e11c26385bd90ccf90da98}\label{class_incremental_engine_1_1_d3_d_implementation_aadb9c1d337e11c26385bd90ccf90da98}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetDeviceContext@{GetDeviceContext}}
+\index{GetDeviceContext@{GetDeviceContext}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetDeviceContext()}{GetDeviceContext()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context $\ast$ Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a85c50cd9451c7fd68f80c2fe02ae2a54}\label{class_incremental_engine_1_1_d3_d_implementation_a85c50cd9451c7fd68f80c2fe02ae2a54}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetOrthoProjectionMatrix@{GetOrthoProjectionMatrix}}
+\index{GetOrthoProjectionMatrix@{GetOrthoProjectionMatrix}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetOrthoProjectionMatrix()}{GetOrthoProjectionMatrix()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+Ortho\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{D3\+D\+X\+M\+A\+T\+R\+IX \&}]{ortho\+Matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a437041336a49cb54a185d40eb02437b8}\label{class_incremental_engine_1_1_d3_d_implementation_a437041336a49cb54a185d40eb02437b8}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetProjectionMatrix@{GetProjectionMatrix}}
+\index{GetProjectionMatrix@{GetProjectionMatrix}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetProjectionMatrix()}{GetProjectionMatrix()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{D3\+D\+X\+M\+A\+T\+R\+IX \&}]{projection\+Matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_ac1c3aa9c008e2d5ced5cf366231c833d}\label{class_incremental_engine_1_1_d3_d_implementation_ac1c3aa9c008e2d5ced5cf366231c833d}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetVideoCardInfo@{GetVideoCardInfo}}
+\index{GetVideoCardInfo@{GetVideoCardInfo}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetVideoCardInfo()}{GetVideoCardInfo()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+Video\+Card\+Info (\begin{DoxyParamCaption}\item[{char $\ast$}]{card\+Name,  }\item[{int \&}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a91081fdd144389a3d737caeaaef3db8e}\label{class_incremental_engine_1_1_d3_d_implementation_a91081fdd144389a3d737caeaaef3db8e}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!GetWorldMatrix@{GetWorldMatrix}}
+\index{GetWorldMatrix@{GetWorldMatrix}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{GetWorldMatrix()}{GetWorldMatrix()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Get\+World\+Matrix (\begin{DoxyParamCaption}\item[{D3\+D\+X\+M\+A\+T\+R\+IX \&}]{world\+Matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_aa819cfc735a3279366344c537dbf2a67}\label{class_incremental_engine_1_1_d3_d_implementation_aa819cfc735a3279366344c537dbf2a67}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!Init@{Init}}
+\index{Init@{Init}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_incremental_engine_1_1_render_window}{Render\+Window}} $\ast$}]{render\+Window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a00b36150ca30969fd80e797c0c20b069}\label{class_incremental_engine_1_1_d3_d_implementation_a00b36150ca30969fd80e797c0c20b069}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!SetWorldMatrix@{SetWorldMatrix}}
+\index{SetWorldMatrix@{SetWorldMatrix}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{SetWorldMatrix()}{SetWorldMatrix()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Set\+World\+Matrix (\begin{DoxyParamCaption}\item[{D3\+D\+X\+M\+A\+T\+R\+IX \&}]{world\+Matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_af4f66b6d32207f96b0fb6a58735b0668}\label{class_incremental_engine_1_1_d3_d_implementation_af4f66b6d32207f96b0fb6a58735b0668}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!TurnZBufferOff@{TurnZBufferOff}}
+\index{TurnZBufferOff@{TurnZBufferOff}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{TurnZBufferOff()}{TurnZBufferOff()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Turn\+Z\+Buffer\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_incremental_engine_1_1_d3_d_implementation_a3c3206ab5040940ea4bd463aaad030f0}\label{class_incremental_engine_1_1_d3_d_implementation_a3c3206ab5040940ea4bd463aaad030f0}} 
+\index{IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}!TurnZBufferOn@{TurnZBufferOn}}
+\index{TurnZBufferOn@{TurnZBufferOn}!IncrementalEngine::D3DImplementation@{IncrementalEngine::D3DImplementation}}
+\doxysubsubsection{\texorpdfstring{TurnZBufferOn()}{TurnZBufferOn()}}
+{\footnotesize\ttfamily void Incremental\+Engine\+::\+D3\+D\+Implementation\+::\+Turn\+Z\+Buffer\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\mbox{\hyperlink{_d3_d_implementation_8h}{D3\+D\+Implementation.\+h}}\item 
+D\+:/\+User/\+Pol/\+Tecnocampus/4t Curs/\+T\+F\+G/\+Incremental\+Engine/\+Incremental\+Engine/\+Incremental\+Engine/\mbox{\hyperlink{_d3_d_implementation_8cpp}{D3\+D\+Implementation.\+cpp}}\end{DoxyCompactItemize}
