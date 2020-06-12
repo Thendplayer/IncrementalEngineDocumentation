@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gameclass_2eh_1716',['GameClass.h',['../_game_class_8h.html',1,'']]]
+  ['inputmanager_2ecpp_509',['InputManager.cpp',['../_input_manager_8cpp.html',1,'']]],
+  ['inputmanager_2eh_510',['InputManager.h',['../_input_manager_8h.html',1,'']]]
 ];

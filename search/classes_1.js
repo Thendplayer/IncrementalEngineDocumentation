@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['actor_1626',['Actor',['../class_incremental_engine_1_1_actor.html',1,'IncrementalEngine']]]
+  ['bitmap_389',['Bitmap',['../class_incremental_engine_1_1_bitmap.html',1,'IncrementalEngine']]],
+  ['button_390',['Button',['../class_incremental_engine_1_1_button.html',1,'IncrementalEngine']]]
 ];

@@ -9,5 +9,8 @@ var class_incremental_engine_1_1_render_camera =
     [ "SetPosition", "class_incremental_engine_1_1_render_camera.html#a041b15cd8d93825c2754d7b570322515", null ],
     [ "SetPosition", "class_incremental_engine_1_1_render_camera.html#ac868528bc9480e7aafd4bae4e1374700", null ],
     [ "SetRotation", "class_incremental_engine_1_1_render_camera.html#a7a5655c77c7a5a8d3291c946eafcde0d", null ],
-    [ "SetRotation", "class_incremental_engine_1_1_render_camera.html#a16382d61fbd739b00b1b42e184a8cd71", null ]
+    [ "SetRotation", "class_incremental_engine_1_1_render_camera.html#a16382d61fbd739b00b1b42e184a8cd71", null ],
+    [ "_position", "class_incremental_engine_1_1_render_camera.html#abddb8cff5a2029c1479ca5d885112ef5", null ],
+    [ "_rotation", "class_incremental_engine_1_1_render_camera.html#a16d46234f5a96c9e1725b7cb360fb608", null ],
+    [ "_viewMatrix", "class_incremental_engine_1_1_render_camera.html#a0a63c71229be57657249d83d0c970a66", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Sprite Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Sprite Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_sprite.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_sprite-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Sprite Class Reference</div>  </div>
@@ -102,7 +103,8 @@ Inheritance diagram for IncrementalEngine::Sprite:</div>
 <area href="class_incremental_engine_1_1_actor.html" alt="IncrementalEngine::Actor" shape="rect" coords="106,56,309,80"/>
 <area href="class_incremental_engine_1_1_transformable.html" alt="IncrementalEngine::Transformable" shape="rect" coords="0,0,203,24"/>
 <area href="class_incremental_engine_1_1_drawable.html" alt="IncrementalEngine::Drawable" shape="rect" coords="213,0,416,24"/>
-<area href="class_incremental_engine_1_1_button.html" alt="IncrementalEngine::Button" shape="rect" coords="106,168,309,192"/>
+<area href="class_incremental_engine_1_1_button.html" alt="IncrementalEngine::Button" shape="rect" coords="0,168,203,192"/>
+<area href="class_incremental_engine_1_1_panel.html" alt="IncrementalEngine::Panel" shape="rect" coords="213,168,416,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -118,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2eb93b7906639cbc45101d8bc9042e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06f5df3f5aef5c8c5f0be778cd319879"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sprite.html#a06f5df3f5aef5c8c5f0be778cd319879">GetLocalBounds</a> () override</td></tr>
 <tr class="separator:a06f5df3f5aef5c8c5f0be778cd319879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d848bd6e78b2d6b314b2bac86f3290"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sprite.html#a27d848bd6e78b2d6b314b2bac86f3290">Update</a> () override</td></tr>
-<tr class="separator:a27d848bd6e78b2d6b314b2bac86f3290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3201aea09431bf1067c1a77b16c356e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sprite.html#ab3201aea09431bf1067c1a77b16c356e">Update</a> (float dt) override</td></tr>
+<tr class="separator:ab3201aea09431bf1067c1a77b16c356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4107eb9ce6d1bdab9c47a59d6ba6576"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sprite.html#aa4107eb9ce6d1bdab9c47a59d6ba6576">Draw</a> (ID3D11DeviceContext *deviceContext) override</td></tr>
 <tr class="separator:aa4107eb9ce6d1bdab9c47a59d6ba6576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_incremental_engine_1_1_actor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_incremental_engine_1_1_actor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_incremental_engine_1_1_actor.html">IncrementalEngine::Actor</a></td></tr>
@@ -127,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab627150352b4385a62f0492eadf7e673 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d68d1e10cdceeb1fc57ed3dfa4fe417 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#a8d68d1e10cdceeb1fc57ed3dfa4fe417">Init</a> ()</td></tr>
 <tr class="separator:a8d68d1e10cdceeb1fc57ed3dfa4fe417 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6688ced888007314381d6896ccc6b8 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#adf6688ced888007314381d6896ccc6b8">UpdateRecursive</a> ()</td></tr>
-<tr class="separator:adf6688ced888007314381d6896ccc6b8 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4a807a40afecaedabf811c5163518b inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#adb4a807a40afecaedabf811c5163518b">UpdateRecursive</a> (float dt)</td></tr>
+<tr class="separator:adb4a807a40afecaedabf811c5163518b inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77017129803e160a9ac3920ae673c03a inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#a77017129803e160a9ac3920ae673c03a">DrawRecursive</a> (ID3D11DeviceContext *deviceContext)</td></tr>
 <tr class="separator:a77017129803e160a9ac3920ae673c03a inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05eec992e681bad92881ab7f56ada0cd inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#a05eec992e681bad92881ab7f56ada0cd">GetGlobalBounds</a> ()</td></tr>
@@ -193,6 +195,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc8bed343ba6200af02f3138afd0f652 inherit pub_methods_class_incremental_engine_1_1_transformable"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#adc8bed343ba6200af02f3138afd0f652">GetInverseTransform</a> () const</td></tr>
 <tr class="separator:adc8bed343ba6200af02f3138afd0f652 inherit pub_methods_class_incremental_engine_1_1_transformable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a20f557bee26834ee3ceaaadddc2306d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_incremental_engine_1_1_texture_base.html">TextureBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a></td></tr>
+<tr class="separator:a20f557bee26834ee3ceaaadddc2306d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_incremental_engine_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_incremental_engine_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_incremental_engine_1_1_drawable.html">IncrementalEngine::Drawable</a></td></tr>
@@ -209,7 +216,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:accdcbebd67d3619c47915700cceb3bda inherit pro_attribs_class_incremental_engine_1_1_drawable"><td class="memItemLeft" align="right" valign="top">ID3D11Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_drawable.html#accdcbebd67d3619c47915700cceb3bda">_device</a></td></tr>
 <tr class="separator:accdcbebd67d3619c47915700cceb3bda inherit pro_attribs_class_incremental_engine_1_1_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_sprite_8h_source.html#l00009">9</a> of file <a class="el" href="_sprite_8h_source.html">Sprite.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b40da8086554542f3d728163760e664"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b40da8086554542f3d728163760e664">&#9670;&nbsp;</a></span>Sprite()</h2>
 
@@ -225,6 +235,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00006">6</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                   :</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>(NULL)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0165fb29e5f2f3c1fce5dd4ed3e11dd7"></a>
@@ -250,6 +266,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00011">11</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        CHECKED_DELETE(<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -268,6 +289,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00041">41</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        CHECKED_DELETE(<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa4107eb9ce6d1bdab9c47a59d6ba6576"></a>
@@ -296,6 +322,23 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#ad3f695905f9980ed64dc18553c2aae9f">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00063">63</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        HRESULT result;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            result = <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>-&gt;<a class="code" href="class_incremental_engine_1_1_drawable.html#a3cec82e926d0f0823cb7139e8d9888de">Draw</a>(deviceContext);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span> (FAILED(result))</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a06f5df3f5aef5c8c5f0be778cd319879"></a>
@@ -323,6 +366,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#ab04113cd239eefdfce9bdcf7246d8e51">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00046">46</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        FloatRect bounds = {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            0.f,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            0.f,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>-&gt;<a class="code" href="class_incremental_engine_1_1_texture_base.html#a223a142658ccecec3c4492c8911a3aab">GetSize</a>().x,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>-&gt;<a class="code" href="class_incremental_engine_1_1_texture_base.html#a223a142658ccecec3c4492c8911a3aab">GetSize</a>().y</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> bounds;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a733e0a758db79ed9ea9b39ff0f0564f9"></a>
@@ -341,10 +396,35 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00016">16</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>-&gt;<a class="code" href="class_incremental_engine_1_1_texture_base.html#aa51f911db2c886e351cf07c0fc0327c2">GetTexture</a>() == texture)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            CHECKED_DELETE(<a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">auto</span> bitmap = <span class="keyword">new</span> Bitmap;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_incremental_engine_1_1_drawable.html#affebb742603c7e9c4cf9b9bf68c3d28f">CopyParameters</a>(bitmap);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        HRESULT result = bitmap-&gt;Create(texture);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (FAILED(result))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a> = bitmap;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">Center</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a27d848bd6e78b2d6b314b2bac86f3290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d848bd6e78b2d6b314b2bac86f3290">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ab3201aea09431bf1067c1a77b16c356e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3201aea09431bf1067c1a77b16c356e">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +435,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void IncrementalEngine::Sprite::Update </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -366,14 +447,53 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#a61eaeb5c4d48cbb7b34b90baa9081d41">IncrementalEngine::Actor</a>.</p>
+<p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#a07d89af25f687030c387183ecba73350">IncrementalEngine::Actor</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_incremental_engine_1_1_button.html#a71fe2192ee0fdc8899baf8c3649d754c">IncrementalEngine::Button</a>.</p>
+<p>Reimplemented in <a class="el" href="class_incremental_engine_1_1_panel.html#ad4ac0bf9a3f93dee74ce34adfa8a4268">IncrementalEngine::Panel</a>, and <a class="el" href="class_incremental_engine_1_1_button.html#a51da5e6fcfea45c02c9ae996a22f6fc4">IncrementalEngine::Button</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_sprite_8cpp_source.html#l00058">58</a> of file <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">_texture</a>-&gt;<a class="code" href="class_incremental_engine_1_1_texture_base.html#ad105590a44669fc481a6411c1b5be99c">Update</a>(<a class="code" href="class_incremental_engine_1_1_actor.html#aac79ae6d406d5ea75e0948917e307509">GetWorldTransform</a>(), <a class="code" href="class_incremental_engine_1_1_sprite.html#a06f5df3f5aef5c8c5f0be778cd319879">GetLocalBounds</a>());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a20f557bee26834ee3ceaaadddc2306d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f557bee26834ee3ceaaadddc2306d3">&#9670;&nbsp;</a></span>_texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_incremental_engine_1_1_texture_base.html">TextureBase</a>* IncrementalEngine::Sprite::_texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sprite_8h_source.html#l00024">24</a> of file <a class="el" href="_sprite_8h_source.html">Sprite.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_drawable_html_a3cec82e926d0f0823cb7139e8d9888de"><div class="ttname"><a href="class_incremental_engine_1_1_drawable.html#a3cec82e926d0f0823cb7139e8d9888de">IncrementalEngine::Drawable::Draw</a></div><div class="ttdeci">virtual HRESULT Draw(ID3D11DeviceContext *deviceContext)=0</div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_base_html_aa51f911db2c886e351cf07c0fc0327c2"><div class="ttname"><a href="class_incremental_engine_1_1_texture_base.html#aa51f911db2c886e351cf07c0fc0327c2">IncrementalEngine::TextureBase::GetTexture</a></div><div class="ttdeci">Texture * GetTexture()</div><div class="ttdef"><b>Definition:</b> <a href="_texture_base_8cpp_source.html#l00022">TextureBase.cpp:22</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_actor_html_aac79ae6d406d5ea75e0948917e307509"><div class="ttname"><a href="class_incremental_engine_1_1_actor.html#aac79ae6d406d5ea75e0948917e307509">IncrementalEngine::Actor::GetWorldTransform</a></div><div class="ttdeci">const Transform GetWorldTransform()</div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00093">Actor.cpp:93</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_sprite_html_a20f557bee26834ee3ceaaadddc2306d3"><div class="ttname"><a href="class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3">IncrementalEngine::Sprite::_texture</a></div><div class="ttdeci">TextureBase * _texture</div><div class="ttdef"><b>Definition:</b> <a href="_sprite_8h_source.html#l00024">Sprite.h:24</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_drawable_html_affebb742603c7e9c4cf9b9bf68c3d28f"><div class="ttname"><a href="class_incremental_engine_1_1_drawable.html#affebb742603c7e9c4cf9b9bf68c3d28f">IncrementalEngine::Drawable::CopyParameters</a></div><div class="ttdeci">void CopyParameters(Drawable *drawable)</div><div class="ttdef"><b>Definition:</b> <a href="_drawable_8h_source.html#l00020">Drawable.h:20</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_base_html_a223a142658ccecec3c4492c8911a3aab"><div class="ttname"><a href="class_incremental_engine_1_1_texture_base.html#a223a142658ccecec3c4492c8911a3aab">IncrementalEngine::TextureBase::GetSize</a></div><div class="ttdeci">D3DXVECTOR2 GetSize()</div><div class="ttdef"><b>Definition:</b> <a href="_texture_base_8cpp_source.html#l00027">TextureBase.cpp:27</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_actor_html_a4088c77027ed8329108aa17d9c1fa3ec"><div class="ttname"><a href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">IncrementalEngine::Actor::Center</a></div><div class="ttdeci">void Center()</div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00077">Actor.cpp:77</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_base_html_ad105590a44669fc481a6411c1b5be99c"><div class="ttname"><a href="class_incremental_engine_1_1_texture_base.html#ad105590a44669fc481a6411c1b5be99c">IncrementalEngine::TextureBase::Update</a></div><div class="ttdeci">void Update(Transform transform, FloatRect bounds)</div><div class="ttdef"><b>Definition:</b> <a href="_texture_base_8cpp_source.html#l00016">TextureBase.cpp:16</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_sprite_html_a06f5df3f5aef5c8c5f0be778cd319879"><div class="ttname"><a href="class_incremental_engine_1_1_sprite.html#a06f5df3f5aef5c8c5f0be778cd319879">IncrementalEngine::Sprite::GetLocalBounds</a></div><div class="ttdeci">virtual FloatRect GetLocalBounds() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprite_8cpp_source.html#l00046">Sprite.cpp:46</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

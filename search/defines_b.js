@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['length_3162',['LENGTH',['../_math_utils_8h.html#ae36d3c112cdcdb1a1c59ab449ccda3e5',1,'MathUtils.h']]],
-  ['lowpass_5fdefault_5fgain_3163',['LOWPASS_DEFAULT_GAIN',['../efx_8h.html#ae1bda89cef50389ebe2b76276407d18f',1,'efx.h']]],
-  ['lowpass_5fdefault_5fgainhf_3164',['LOWPASS_DEFAULT_GAINHF',['../efx_8h.html#ae120c624a641845e9226bccc25698000',1,'efx.h']]],
-  ['lowpass_5fmax_5fgain_3165',['LOWPASS_MAX_GAIN',['../efx_8h.html#aea740227e8fdcc456306e2ef8253e309',1,'efx.h']]],
-  ['lowpass_5fmax_5fgainhf_3166',['LOWPASS_MAX_GAINHF',['../efx_8h.html#a8384396ba52208d0b41d49672f13e2fa',1,'efx.h']]],
-  ['lowpass_5fmin_5fgain_3167',['LOWPASS_MIN_GAIN',['../efx_8h.html#ab0e15819fbbaeab7e6c43bd53cc18c7d',1,'efx.h']]],
-  ['lowpass_5fmin_5fgainhf_3168',['LOWPASS_MIN_GAINHF',['../efx_8h.html#a88ae785dadc2c7356be8d1cd404a1f03',1,'efx.h']]]
+  ['save_5fextension_943',['SAVE_EXTENSION',['../_save_system_8h.html#a7ebd03cca086848d7479d0ad71e6d691',1,'SaveSystem.h']]],
+  ['saves_5fpath_944',['SAVES_PATH',['../_save_system_8h.html#a1a644efdfe7a8af5d85e1d5946b1f62a',1,'SaveSystem.h']]],
+  ['stringaswchar_5fptr_945',['StringAsWCHAR_ptr',['../_string_utils_8h.html#ae176d6deba3ea8b0b916ad5bf587bad4',1,'StringUtils.h']]],
+  ['suffix_946',['SUFFIX',['../_kmb_number_8h.html#a54e38498e51683b1e6424fd523e0e9ed',1,'KmbNumber.h']]]
 ];

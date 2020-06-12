@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Texture Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Texture Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_texture.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_texture-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Texture Class Reference</div>  </div>
@@ -106,8 +107,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2b6f8b634520f3d9bf05199a795bfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d77ee786745a660c07c2e62e3d9d54"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_texture.html#a51d77ee786745a660c07c2e62e3d9d54">~Texture</a> ()</td></tr>
 <tr class="separator:a51d77ee786745a660c07c2e62e3d9d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae35264f27240fd3669673bc30ea4840c"><td class="memItemLeft" align="right" valign="top">ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a></td></tr>
+<tr class="separator:ae35264f27240fd3669673bc30ea4840c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3755ddd6f1774240cfd47e9c5741af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_texture.html#a0e3755ddd6f1774240cfd47e9c5741af">_filename</a></td></tr>
+<tr class="separator:a0e3755ddd6f1774240cfd47e9c5741af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc244e2115b1a367154eab48b2ad484"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_texture.html#aefc244e2115b1a367154eab48b2ad484">_size</a></td></tr>
+<tr class="separator:aefc244e2115b1a367154eab48b2ad484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_texture_8h_source.html#l00012">12</a> of file <a class="el" href="_texture_8h_source.html">Texture.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad2b6f8b634520f3d9bf05199a795bfa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2b6f8b634520f3d9bf05199a795bfa2">&#9670;&nbsp;</a></span>Texture()</h2>
 
@@ -124,6 +137,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_texture_8cpp_source.html#l00006">6</a> of file <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                       :</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a>(NULL),</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="class_incremental_engine_1_1_texture.html#aefc244e2115b1a367154eab48b2ad484">_size</a>(0, 0),</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="class_incremental_engine_1_1_texture.html#a0e3755ddd6f1774240cfd47e9c5741af">_filename</a>(filename)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51d77ee786745a660c07c2e62e3d9d54"></a>
@@ -149,6 +170,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_texture_8cpp_source.html#l00013">13</a> of file <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        CHECKED_RELEASE(<a class="code" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -167,6 +193,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_texture_8cpp_source.html#l00058">58</a> of file <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_texture.html#aefc244e2115b1a367154eab48b2ad484">_size</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acc21807042bb7d93cc2f53bc07428ecb"></a>
@@ -184,6 +215,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_texture_8cpp_source.html#l00053">53</a> of file <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a47088c50ea32fdf6664997e4cd552b"></a>
@@ -202,10 +238,121 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_texture_8cpp_source.html#l00018">18</a> of file <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ID3D11Resource* resource;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        ID3D11Texture2D* texture2D;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        D3D11_TEXTURE2D_DESC desc;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::wstring filename(<a class="code" href="class_incremental_engine_1_1_texture.html#a0e3755ddd6f1774240cfd47e9c5741af">_filename</a>.begin(), <a class="code" href="class_incremental_engine_1_1_texture.html#a0e3755ddd6f1774240cfd47e9c5741af">_filename</a>.end());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        HRESULT result = D3DX11CreateShaderResourceViewFromFile(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            device, </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            filename.c_str(),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            NULL, </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            NULL, </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            &amp;<a class="code" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a>, </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            NULL</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (FAILED(result))</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">_texture</a>-&gt;GetResource(&amp;resource);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        texture2D = <span class="keyword">static_cast&lt;</span>ID3D11Texture2D*<span class="keyword">&gt;</span>(resource);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (texture2D == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        texture2D-&gt;GetDesc(&amp;desc);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_incremental_engine_1_1_texture.html#aefc244e2115b1a367154eab48b2ad484">_size</a> = D3DXVECTOR2(desc.Width, desc.Height);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0e3755ddd6f1774240cfd47e9c5741af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3755ddd6f1774240cfd47e9c5741af">&#9670;&nbsp;</a></span>_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string IncrementalEngine::Texture::_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_texture_8h_source.html#l00025">25</a> of file <a class="el" href="_texture_8h_source.html">Texture.h</a>.</p>
+
+</div>
+</div>
+<a id="aefc244e2115b1a367154eab48b2ad484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc244e2115b1a367154eab48b2ad484">&#9670;&nbsp;</a></span>_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR2 IncrementalEngine::Texture::_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_texture_8h_source.html#l00026">26</a> of file <a class="el" href="_texture_8h_source.html">Texture.h</a>.</p>
+
+</div>
+</div>
+<a id="ae35264f27240fd3669673bc30ea4840c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35264f27240fd3669673bc30ea4840c">&#9670;&nbsp;</a></span>_texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11ShaderResourceView* IncrementalEngine::Texture::_texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_texture_8h_source.html#l00024">24</a> of file <a class="el" href="_texture_8h_source.html">Texture.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_html_a0e3755ddd6f1774240cfd47e9c5741af"><div class="ttname"><a href="class_incremental_engine_1_1_texture.html#a0e3755ddd6f1774240cfd47e9c5741af">IncrementalEngine::Texture::_filename</a></div><div class="ttdeci">std::string _filename</div><div class="ttdef"><b>Definition:</b> <a href="_texture_8h_source.html#l00025">Texture.h:25</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_html_ae35264f27240fd3669673bc30ea4840c"><div class="ttname"><a href="class_incremental_engine_1_1_texture.html#ae35264f27240fd3669673bc30ea4840c">IncrementalEngine::Texture::_texture</a></div><div class="ttdeci">ID3D11ShaderResourceView * _texture</div><div class="ttdef"><b>Definition:</b> <a href="_texture_8h_source.html#l00024">Texture.h:24</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_html_aefc244e2115b1a367154eab48b2ad484"><div class="ttname"><a href="class_incremental_engine_1_1_texture.html#aefc244e2115b1a367154eab48b2ad484">IncrementalEngine::Texture::_size</a></div><div class="ttdeci">D3DXVECTOR2 _size</div><div class="ttdef"><b>Definition:</b> <a href="_texture_8h_source.html#l00026">Texture.h:26</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

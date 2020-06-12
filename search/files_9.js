@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['license_2etxt_1721',['LICENSE.txt',['../_l_i_c_e_n_s_e_8txt.html',1,'']]]
+  ['panel_2ecpp_518',['Panel.cpp',['../_panel_8cpp.html',1,'']]],
+  ['panel_2eh_519',['Panel.h',['../_panel_8h.html',1,'']]]
 ];

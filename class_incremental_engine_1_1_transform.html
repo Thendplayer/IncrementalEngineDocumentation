@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Transform Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_transform
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_transform-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Transform Class Reference</div>  </div>
@@ -136,8 +137,16 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8b38fa0aa33a2565e6e93e2cfd259291"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291">Identity</a></td></tr>
 <tr class="separator:a8b38fa0aa33a2565e6e93e2cfd259291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a66966b516936c5a54b7e743bb2e5a645"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a> [16]</td></tr>
+<tr class="separator:a66966b516936c5a54b7e743bb2e5a645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_transform_8h_source.html#l00041">41</a> of file <a class="el" href="_transform_8h_source.html">Transform.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9bfc6898d74f5aef9635f9930249e5db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bfc6898d74f5aef9635f9930249e5db">&#9670;&nbsp;</a></span>Transform() <span class="overload">[1/2]</span></h2>
 
@@ -153,6 +162,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00036">36</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] = 1.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[8]  = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12] = 0.f;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] = 1.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[9]  = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13] = 0.f;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[2] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[6] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[10] = 1.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[14] = 0.f;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[11] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] = 1.f;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4e670a5ddd6b82a1df6a6395e18fb4ab"></a>
@@ -223,6 +240,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00044">44</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] = a00; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] = a01; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[8]  = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12] = a02;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] = a10; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] = a11; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[9]  = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13] = a12;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[2] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[6] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[10] = 1.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[14] = 0.f;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] = a20; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] = a21; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[11] = 0.f; <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] = a22;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -242,6 +267,24 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00125">125</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>* a = <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>* b = transform._matrix;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        *<span class="keyword">this</span> = <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a>(a[0] * b[0]  + a[4] * b[1]  + a[12] * b[3],</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                          a[0] * b[4]  + a[4] * b[5]  + a[12] * b[7],</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                          a[0] * b[12] + a[4] * b[13] + a[12] * b[15],</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                          a[1] * b[0]  + a[5] * b[1]  + a[13] * b[3],</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                          a[1] * b[4]  + a[5] * b[5]  + a[13] * b[7],</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                          a[1] * b[12] + a[5] * b[13] + a[13] * b[15],</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                          a[3] * b[0]  + a[7] * b[1]  + a[15] * b[3],</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                          a[3] * b[4]  + a[7] * b[5]  + a[15] * b[7],</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                          a[3] * b[12] + a[7] * b[13] + a[15] * b[15]);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a03282f099c06d5d406d522f324fb8727"></a>
@@ -259,6 +302,31 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00061">61</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">float</span> det = <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] * (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13]) -</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] * (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]) +</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] * (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (det != 0.f)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a>( (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13]) / det,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             -(<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]) / det,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                              (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]) / det,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                             -(<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13]) / det,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                              (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[15] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]) / det,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                             -(<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12]) / det,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                              (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7]  * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5])  / det,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                             -(<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[7]  * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[3] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4])  / det,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                              (<a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5]  * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] - <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] * <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4])  / det</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291">Identity</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adce7aae13e2662d40ae5281ca18dff62"></a>
@@ -276,6 +344,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00056">56</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a95f3608299ade66bcc3ad9984e50d53c"></a>
@@ -294,6 +367,19 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00157">157</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordtype">float</span> rad = angle * 3.141592654f / 180.f;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">float</span> cos = std::cos(rad);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">float</span> sin = std::sin(rad);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a> rotation(cos, -sin, 0,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                           sin,  cos, 0,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                           0,    0,   1);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">Combine</a>(rotation);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae34a5b659bbd9d3ac2e155a5675d25b"></a>
@@ -322,6 +408,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00183">183</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a95f3608299ade66bcc3ad9984e50d53c">Rotate</a>(angle, center.x, center.y);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb54abd48c986294c33d44c91a431313"></a>
@@ -356,6 +447,19 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00170">170</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordtype">float</span> rad = angle * 3.141592654f / 180.f;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">float</span> cos = std::cos(rad);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">float</span> sin = std::sin(rad);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a> rotation(cos, -sin, centerX * (1 - cos) + centerY * sin,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                           sin,  cos, centerY * (1 - cos) - centerX * sin,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                           0,    0,   1);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">Combine</a>(rotation);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a22240c6f45be9a012c00292326f676c9"></a>
@@ -374,6 +478,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00206">206</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#ac88343d43a4f89bdff88947cf8aa2769">Scale</a>(factors.x, factors.y);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adcc09c24868fd9d8dfee1e7dd40377da"></a>
@@ -402,6 +511,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00211">211</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#ac88343d43a4f89bdff88947cf8aa2769">Scale</a>(factors.x, factors.y, center.x, center.y);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac88343d43a4f89bdff88947cf8aa2769"></a>
@@ -430,6 +544,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00188">188</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a> scaling(scaleX, 0,      0,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                          0,      scaleY, 0, </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                          0,      0,      1);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">Combine</a>(scaling);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a844d3331d281efd171145bba54d0a42a"></a>
@@ -470,6 +593,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00197">197</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a> scaling(scaleX, 0,      centerX * (1 - scaleX),</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                          0,      scaleY, centerY * (1 - scaleY),</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                          0,      0,      1);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">Combine</a>(scaling);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaaac51288d71a3609edb704ccf214f9a"></a>
@@ -488,6 +620,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00094">94</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">TransformPoint</a>(point.x, point.y);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab8216ed21227995ab538f566127ce4b8"></a>
@@ -516,6 +653,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00086">86</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> D3DXVECTOR2(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[0] * x + <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[4] * y + <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[12],</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[1] * x + <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[5] * y + <a class="code" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">_matrix</a>[13]</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4f1b699a351cea60e2f3ff693b8e19a1"></a>
@@ -534,6 +679,32 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00099">99</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">const</span> D3DXVECTOR2 points[] =</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">TransformPoint</a>(rectangle.left(), rectangle.top()),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">TransformPoint</a>(rectangle.left(), rectangle.top() + rectangle.height()),</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">TransformPoint</a>(rectangle.left() + rectangle.width(), rectangle.top()),</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">TransformPoint</a>(rectangle.left() + rectangle.width(), rectangle.top() + rectangle.height())</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        };</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">float</span> left = points[0].x;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">float</span> top = points[0].y;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">float</span> right = points[0].x;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">float</span> bottom = points[0].y;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 4; ++i)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (points[i].x &lt; left)   left = points[i].x;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (points[i].x &gt; right)  right = points[i].x;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">if</span> (points[i].y &lt; top)    top = points[i].y;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (points[i].y &gt; bottom) bottom = points[i].y;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> FloatRect(left, top, right - left, bottom - top);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac404ba4dd9765be5b6df138e14f47a6a"></a>
@@ -552,6 +723,11 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00152">152</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#ae192e87ed3621e6c576cc7d698600225">Translate</a>(offset.x, offset.y);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae192e87ed3621e6c576cc7d698600225"></a>
@@ -580,9 +756,42 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8cpp_source.html#l00143">143</a> of file <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">Transform</a> translation(1, 0, x,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                              0, 1, y,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                              0, 0, 1);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">Combine</a>(translation);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a66966b516936c5a54b7e743bb2e5a645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66966b516936c5a54b7e743bb2e5a645">&#9670;&nbsp;</a></span>_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IncrementalEngine::Transform::_matrix[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transform_8h_source.html#l00076">76</a> of file <a class="el" href="_transform_8h_source.html">Transform.h</a>.</p>
+
+</div>
+</div>
 <a id="a8b38fa0aa33a2565e6e93e2cfd259291"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b38fa0aa33a2565e6e93e2cfd259291">&#9670;&nbsp;</a></span>Identity</h2>
 
@@ -603,10 +812,20 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transform_8h_source.html#l00044">44</a> of file <a class="el" href="_transform_8h_source.html">Transform.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a9bfc6898d74f5aef9635f9930249e5db"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a9bfc6898d74f5aef9635f9930249e5db">IncrementalEngine::Transform::Transform</a></div><div class="ttdeci">Transform()</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00036">Transform.cpp:36</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_ae192e87ed3621e6c576cc7d698600225"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#ae192e87ed3621e6c576cc7d698600225">IncrementalEngine::Transform::Translate</a></div><div class="ttdeci">Transform &amp; Translate(float x, float y)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00143">Transform.cpp:143</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a66966b516936c5a54b7e743bb2e5a645"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">IncrementalEngine::Transform::_matrix</a></div><div class="ttdeci">float _matrix[16]</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00076">Transform.h:76</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a8b38fa0aa33a2565e6e93e2cfd259291"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291">IncrementalEngine::Transform::Identity</a></div><div class="ttdeci">static const Transform Identity</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00044">Transform.h:44</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a95f3608299ade66bcc3ad9984e50d53c"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a95f3608299ade66bcc3ad9984e50d53c">IncrementalEngine::Transform::Rotate</a></div><div class="ttdeci">Transform &amp; Rotate(float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00157">Transform.cpp:157</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_ac88343d43a4f89bdff88947cf8aa2769"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#ac88343d43a4f89bdff88947cf8aa2769">IncrementalEngine::Transform::Scale</a></div><div class="ttdeci">Transform &amp; Scale(float scaleX, float scaleY)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00188">Transform.cpp:188</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_ab8216ed21227995ab538f566127ce4b8"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8">IncrementalEngine::Transform::TransformPoint</a></div><div class="ttdeci">D3DXVECTOR2 TransformPoint(float x, float y) const</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00086">Transform.cpp:86</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a83f037c8ff2c934d7776b4b31016e041"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a83f037c8ff2c934d7776b4b31016e041">IncrementalEngine::Transform::Combine</a></div><div class="ttdeci">Transform &amp; Combine(const Transform &amp;transform)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00125">Transform.cpp:125</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

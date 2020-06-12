@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/Transform.h Source File</title>
+<title>Incremental Engine: D:/User/Pol/Tecnocampus/4t Curs/TFG/DocumentationSolution/IncrementalEngine/Transform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_transform_8h_source.html',''); initRe
 <div class="title">Transform.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_transform_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SFML - Simple and Fast Multimedia Library</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Copyright (C) 2007-2019 Laurent Gomila (laurent@sfml-dev.org)</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('_transform_8h_source.html',''); initRe
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef _TRANSFORM_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define _TRANSFORM_H</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_float_rect_8h.html">FloatRect.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;FloatRect.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;D3DX10.h&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -160,32 +160,27 @@ $(document).ready(function(){initNavTree('_transform_8h_source.html',''); initRe
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; Scale(<span class="keyword">const</span> D3DXVECTOR2&amp; factors, <span class="keyword">const</span> D3DXVECTOR2&amp; center);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">float</span> _matrix[16];</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645">   76</a></span>&#160;        <span class="keywordtype">float</span> _matrix[16];</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a> <a class="code" href="namespace_incremental_engine.html#a7663760476603053bd3082bda82f55e0">operator *</a>(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; <a class="code" href="namespace_incremental_engine.html#a30edcfe75fc01049e6df3396dd2a68ba">operator *=</a>(<a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    D3DXVECTOR2 <a class="code" href="namespace_incremental_engine.html#a7663760476603053bd3082bda82f55e0">operator *</a>(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> D3DXVECTOR2&amp; right);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespace_incremental_engine.html#a89c58d1ff9a9de095c18c3a2d156c46c">operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespace_incremental_engine.html#abe4fc57ec62625b4e3556cde554c7b72">operator !=</a>(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a> operator *(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; operator *=(<a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    D3DXVECTOR2 operator *(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> D3DXVECTOR2&amp; right);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> operator ==(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> operator !=(<span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a>&amp; right);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_incremental_engine_html_a30edcfe75fc01049e6df3396dd2a68ba"><div class="ttname"><a href="namespace_incremental_engine.html#a30edcfe75fc01049e6df3396dd2a68ba">IncrementalEngine::operator*=</a></div><div class="ttdeci">Transform &amp; operator*=(Transform &amp;left, const Transform &amp;right)</div><div class="ttdef"><b>Definition:</b> Transform.cpp:221</div></div>
-<div class="ttc" id="anamespace_incremental_engine_html_a89c58d1ff9a9de095c18c3a2d156c46c"><div class="ttname"><a href="namespace_incremental_engine.html#a89c58d1ff9a9de095c18c3a2d156c46c">IncrementalEngine::operator==</a></div><div class="ttdeci">bool operator==(const FloatRect &amp;left, const FloatRect &amp;right)</div><div class="ttdef"><b>Definition:</b> FloatRect.cpp:67</div></div>
-<div class="ttc" id="astruct_incremental_engine_1_1_float_rect_html"><div class="ttname"><a href="struct_incremental_engine_1_1_float_rect.html">IncrementalEngine::FloatRect</a></div><div class="ttdef"><b>Definition:</b> FloatRect.h:9</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_transform_html"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html">IncrementalEngine::Transform</a></div><div class="ttdef"><b>Definition:</b> Transform.h:42</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a8b38fa0aa33a2565e6e93e2cfd259291"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291">IncrementalEngine::Transform::Identity</a></div><div class="ttdeci">static const Transform Identity</div><div class="ttdef"><b>Definition:</b> Transform.h:44</div></div>
-<div class="ttc" id="a_float_rect_8h_html"><div class="ttname"><a href="_float_rect_8h.html">FloatRect.h</a></div></div>
-<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
-<div class="ttc" id="anamespace_incremental_engine_html_abe4fc57ec62625b4e3556cde554c7b72"><div class="ttname"><a href="namespace_incremental_engine.html#abe4fc57ec62625b4e3556cde554c7b72">IncrementalEngine::operator!=</a></div><div class="ttdeci">bool operator!=(const FloatRect &amp;left, const FloatRect &amp;right)</div><div class="ttdef"><b>Definition:</b> FloatRect.cpp:77</div></div>
-<div class="ttc" id="anamespace_incremental_engine_html_a7663760476603053bd3082bda82f55e0"><div class="ttname"><a href="namespace_incremental_engine.html#a7663760476603053bd3082bda82f55e0">IncrementalEngine::operator*</a></div><div class="ttdeci">Transform operator*(const Transform &amp;left, const Transform &amp;right)</div><div class="ttdef"><b>Definition:</b> Transform.cpp:216</div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_float_rect_html"><div class="ttname"><a href="struct_incremental_engine_1_1_float_rect.html">IncrementalEngine::FloatRect</a></div><div class="ttdef"><b>Definition:</b> <a href="_float_rect_8h_source.html#l00008">FloatRect.h:9</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html">IncrementalEngine::Transform</a></div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00041">Transform.h:42</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a8b38fa0aa33a2565e6e93e2cfd259291"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291">IncrementalEngine::Transform::Identity</a></div><div class="ttdeci">static const Transform Identity</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00044">Transform.h:44</a></div></div>
+<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00004">Actor.cpp:5</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="_transform_8h.html">Transform.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a6646cac019aa24d99494a34a2f2a42f.html">DocumentationSolution</a></li><li class="navelem"><a class="el" href="dir_452023f9ca066ca6ecda26346c167e86.html">IncrementalEngine</a></li><li class="navelem"><b>Transform.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

@@ -6,5 +6,6 @@ var class_incremental_engine_1_1_sprite =
     [ "Draw", "class_incremental_engine_1_1_sprite.html#aa4107eb9ce6d1bdab9c47a59d6ba6576", null ],
     [ "GetLocalBounds", "class_incremental_engine_1_1_sprite.html#a06f5df3f5aef5c8c5f0be778cd319879", null ],
     [ "SetTexture", "class_incremental_engine_1_1_sprite.html#a733e0a758db79ed9ea9b39ff0f0564f9", null ],
-    [ "Update", "class_incremental_engine_1_1_sprite.html#a27d848bd6e78b2d6b314b2bac86f3290", null ]
+    [ "Update", "class_incremental_engine_1_1_sprite.html#ab3201aea09431bf1067c1a77b16c356e", null ],
+    [ "_texture", "class_incremental_engine_1_1_sprite.html#a20f557bee26834ee3ceaaadddc2306d3", null ]
 ];

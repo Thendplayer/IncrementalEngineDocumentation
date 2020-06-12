@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/RenderWindow.h Source File</title>
+<title>Incremental Engine: D:/User/Pol/Tecnocampus/4t Curs/TFG/DocumentationSolution/IncrementalEngine/RenderWindow.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -88,12 +88,12 @@ $(document).ready(function(){initNavTree('_render_window_8h_source.html',''); in
 <div class="title">RenderWindow.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_render_window_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _RenderWindow_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _RenderWindow_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _RenderWindow_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;windowsx.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_config_8h.html">Config.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Config.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_incremental_engine.html">IncrementalEngine</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
@@ -110,33 +110,40 @@ $(document).ready(function(){initNavTree('_render_window_8h_source.html',''); in
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">float</span> <a class="code" href="class_incremental_engine_1_1_render_window.html#ab75d5cbf5ecc4e19bb84b4b08fb994fa">GetScreenNear</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">float</span> <a class="code" href="class_incremental_engine_1_1_render_window.html#a938d27b413adcfb3b35083eeaac038b9">GetScreenDepth</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            HINSTANCE _hInstance;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            HWND _hWnd;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="struct_incremental_engine_1_1_config.html">Config</a> _config;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">int</span> _screenWidth, _screenHeight;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_incremental_engine_1_1_render_window.html#ab91bde8642e71696fed3afecde6d0eef">SetIcon</a>(LPCWSTR icon);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_render_window.html#af844a5d33cc9ab032953eed0d9aaf050">   26</a></span>&#160;            HINSTANCE <a class="code" href="class_incremental_engine_1_1_render_window.html#af844a5d33cc9ab032953eed0d9aaf050">_hInstance</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_render_window.html#a3353347d6a1f40b36fcf809a8fa9a8c2">   27</a></span>&#160;            HWND <a class="code" href="class_incremental_engine_1_1_render_window.html#a3353347d6a1f40b36fcf809a8fa9a8c2">_hWnd</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_render_window.html#a8265d062f002c1c492c25ed3b7fb5ab6">   28</a></span>&#160;            <a class="code" href="struct_incremental_engine_1_1_config.html">Config</a> <a class="code" href="class_incremental_engine_1_1_render_window.html#a8265d062f002c1c492c25ed3b7fb5ab6">_config</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_render_window.html#af03a1e95612e071ff9c6fdf83a467657">   29</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="class_incremental_engine_1_1_render_window.html#af03a1e95612e071ff9c6fdf83a467657">_screenWidth</a>, <a class="code" href="class_incremental_engine_1_1_render_window.html#a918822135f57c7f37cbe8ae4b2754084">_screenHeight</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a588d526c376cea421a3a689b180ba1f8"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a588d526c376cea421a3a689b180ba1f8">IncrementalEngine::RenderWindow::GetHInstance</a></div><div class="ttdeci">HINSTANCE * GetHInstance()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:110</div></div>
-<div class="ttc" id="a_config_8h_html"><div class="ttname"><a href="_config_8h.html">Config.h</a></div></div>
-<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a48e597e2265593a767a077876b3f1aca"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a48e597e2265593a767a077876b3f1aca">IncrementalEngine::RenderWindow::RenderWindow</a></div><div class="ttdeci">RenderWindow(Config config)</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:12</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html">IncrementalEngine::RenderWindow</a></div><div class="ttdef"><b>Definition:</b> RenderWindow.h:11</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a938d27b413adcfb3b35083eeaac038b9"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a938d27b413adcfb3b35083eeaac038b9">IncrementalEngine::RenderWindow::GetScreenDepth</a></div><div class="ttdeci">float GetScreenDepth()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:130</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a56d90edc6c6a059f88c0337c5687d3ca"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a56d90edc6c6a059f88c0337c5687d3ca">IncrementalEngine::RenderWindow::GetScreenHeight</a></div><div class="ttdeci">int GetScreenHeight()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:120</div></div>
-<div class="ttc" id="astruct_incremental_engine_1_1_config_html"><div class="ttname"><a href="struct_incremental_engine_1_1_config.html">IncrementalEngine::Config</a></div><div class="ttdef"><b>Definition:</b> Config.h:14</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a4649083a968f518de76e0ba42aeba7d4"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a4649083a968f518de76e0ba42aeba7d4">IncrementalEngine::RenderWindow::GetScreenWidth</a></div><div class="ttdeci">int GetScreenWidth()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:115</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_aa697775a7ae432f96534057cbcfd3934"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#aa697775a7ae432f96534057cbcfd3934">IncrementalEngine::RenderWindow::GetHWND</a></div><div class="ttdeci">HWND GetHWND()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:105</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_ab75d5cbf5ecc4e19bb84b4b08fb994fa"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#ab75d5cbf5ecc4e19bb84b4b08fb994fa">IncrementalEngine::RenderWindow::GetScreenNear</a></div><div class="ttdeci">float GetScreenNear()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:125</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a9cb9b8c0c24fcd34815280deadb4558d"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a9cb9b8c0c24fcd34815280deadb4558d">IncrementalEngine::RenderWindow::~RenderWindow</a></div><div class="ttdeci">virtual ~RenderWindow()</div><div class="ttdef"><b>Definition:</b> RenderWindow.cpp:88</div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_ab91bde8642e71696fed3afecde6d0eef"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#ab91bde8642e71696fed3afecde6d0eef">IncrementalEngine::RenderWindow::SetIcon</a></div><div class="ttdeci">void SetIcon(LPCWSTR icon)</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00135">RenderWindow.cpp:135</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a588d526c376cea421a3a689b180ba1f8"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a588d526c376cea421a3a689b180ba1f8">IncrementalEngine::RenderWindow::GetHInstance</a></div><div class="ttdeci">HINSTANCE * GetHInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00110">RenderWindow.cpp:110</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a3353347d6a1f40b36fcf809a8fa9a8c2"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a3353347d6a1f40b36fcf809a8fa9a8c2">IncrementalEngine::RenderWindow::_hWnd</a></div><div class="ttdeci">HWND _hWnd</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00027">RenderWindow.h:27</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a918822135f57c7f37cbe8ae4b2754084"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a918822135f57c7f37cbe8ae4b2754084">IncrementalEngine::RenderWindow::_screenHeight</a></div><div class="ttdeci">int _screenHeight</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00029">RenderWindow.h:29</a></div></div>
+<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00004">Actor.cpp:5</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_af03a1e95612e071ff9c6fdf83a467657"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#af03a1e95612e071ff9c6fdf83a467657">IncrementalEngine::RenderWindow::_screenWidth</a></div><div class="ttdeci">int _screenWidth</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00029">RenderWindow.h:29</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_af844a5d33cc9ab032953eed0d9aaf050"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#af844a5d33cc9ab032953eed0d9aaf050">IncrementalEngine::RenderWindow::_hInstance</a></div><div class="ttdeci">HINSTANCE _hInstance</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00026">RenderWindow.h:26</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a48e597e2265593a767a077876b3f1aca"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a48e597e2265593a767a077876b3f1aca">IncrementalEngine::RenderWindow::RenderWindow</a></div><div class="ttdeci">RenderWindow(Config config)</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00012">RenderWindow.cpp:12</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html">IncrementalEngine::RenderWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00010">RenderWindow.h:11</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a8265d062f002c1c492c25ed3b7fb5ab6"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a8265d062f002c1c492c25ed3b7fb5ab6">IncrementalEngine::RenderWindow::_config</a></div><div class="ttdeci">Config _config</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8h_source.html#l00028">RenderWindow.h:28</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a938d27b413adcfb3b35083eeaac038b9"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a938d27b413adcfb3b35083eeaac038b9">IncrementalEngine::RenderWindow::GetScreenDepth</a></div><div class="ttdeci">float GetScreenDepth()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00130">RenderWindow.cpp:130</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a56d90edc6c6a059f88c0337c5687d3ca"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a56d90edc6c6a059f88c0337c5687d3ca">IncrementalEngine::RenderWindow::GetScreenHeight</a></div><div class="ttdeci">int GetScreenHeight()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00120">RenderWindow.cpp:120</a></div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_config_html"><div class="ttname"><a href="struct_incremental_engine_1_1_config.html">IncrementalEngine::Config</a></div><div class="ttdef"><b>Definition:</b> <a href="_config_8h_source.html#l00013">Config.h:14</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a4649083a968f518de76e0ba42aeba7d4"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a4649083a968f518de76e0ba42aeba7d4">IncrementalEngine::RenderWindow::GetScreenWidth</a></div><div class="ttdeci">int GetScreenWidth()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00115">RenderWindow.cpp:115</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_aa697775a7ae432f96534057cbcfd3934"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#aa697775a7ae432f96534057cbcfd3934">IncrementalEngine::RenderWindow::GetHWND</a></div><div class="ttdeci">HWND GetHWND()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00105">RenderWindow.cpp:105</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_ab75d5cbf5ecc4e19bb84b4b08fb994fa"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#ab75d5cbf5ecc4e19bb84b4b08fb994fa">IncrementalEngine::RenderWindow::GetScreenNear</a></div><div class="ttdeci">float GetScreenNear()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00125">RenderWindow.cpp:125</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a9cb9b8c0c24fcd34815280deadb4558d"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a9cb9b8c0c24fcd34815280deadb4558d">IncrementalEngine::RenderWindow::~RenderWindow</a></div><div class="ttdeci">virtual ~RenderWindow()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00088">RenderWindow.cpp:88</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="_render_window_8h.html">RenderWindow.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a6646cac019aa24d99494a34a2f2a42f.html">DocumentationSolution</a></li><li class="navelem"><a class="el" href="dir_452023f9ca066ca6ecda26346c167e86.html">IncrementalEngine</a></li><li class="navelem"><b>RenderWindow.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

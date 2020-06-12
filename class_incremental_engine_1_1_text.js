@@ -16,6 +16,8 @@ var class_incremental_engine_1_1_text =
     [ "ClearText", "class_incremental_engine_1_1_text.html#ac9e019be3f9851dd959ed77fe658f87c", null ],
     [ "Draw", "class_incremental_engine_1_1_text.html#a8b2ecba5f9136160f94855eb58cb6854", null ],
     [ "GetLocalBounds", "class_incremental_engine_1_1_text.html#ab96d87a657de8df4fb42153b3c321924", null ],
+    [ "GetTextExtent", "class_incremental_engine_1_1_text.html#ac71755916ef967b4d2203df79be989fb", null ],
+    [ "GetWorldMatrix", "class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd", null ],
     [ "Init", "class_incremental_engine_1_1_text.html#afdb52f87c489035c14a2da715d46f78f", null ],
     [ "SetFont", "class_incremental_engine_1_1_text.html#a2f3efa703b4ac82ea38bf6b2b9aa7386", null ],
     [ "SetFontAlignment", "class_incremental_engine_1_1_text.html#a64c668c1e701655310687c2625b7eed4", null ],
@@ -24,5 +26,14 @@ var class_incremental_engine_1_1_text =
     [ "SetTextColor", "class_incremental_engine_1_1_text.html#af2b2086646668d69d667625865fd59f0", null ],
     [ "SetTextColor", "class_incremental_engine_1_1_text.html#a50a860fc9e4ebd6d993502ff17adb701", null ],
     [ "SetTextColor", "class_incremental_engine_1_1_text.html#a8a8c8ef45e5b38dc78f4ccaa4bdbef31", null ],
-    [ "Update", "class_incremental_engine_1_1_text.html#aefefd83ae276ab9c2c3252c755da28fd", null ]
+    [ "Update", "class_incremental_engine_1_1_text.html#a88ab3a361441c24f6a27afeb0cf673e4", null ],
+    [ "_color", "class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99", null ],
+    [ "_flags", "class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86", null ],
+    [ "_fontFamily", "class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296", null ],
+    [ "_fontSize", "class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592", null ],
+    [ "_fontWrapper", "class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab", null ],
+    [ "_fontWrapperMatrix", "class_incremental_engine_1_1_text.html#ac1f2f5836a26e94cfcfeebf83bfe140a", null ],
+    [ "_fontWrapperNeedUpdate", "class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92", null ],
+    [ "_previousTransform", "class_incremental_engine_1_1_text.html#a220275f26689b744bf3029bec5aa51aa", null ],
+    [ "_value", "class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d", null ]
 ];

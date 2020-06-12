@@ -16,5 +16,7 @@ var class_incremental_engine_1_1_transform =
     [ "TransformPoint", "class_incremental_engine_1_1_transform.html#ab8216ed21227995ab538f566127ce4b8", null ],
     [ "TransformRect", "class_incremental_engine_1_1_transform.html#a4f1b699a351cea60e2f3ff693b8e19a1", null ],
     [ "Translate", "class_incremental_engine_1_1_transform.html#ac404ba4dd9765be5b6df138e14f47a6a", null ],
-    [ "Translate", "class_incremental_engine_1_1_transform.html#ae192e87ed3621e6c576cc7d698600225", null ]
+    [ "Translate", "class_incremental_engine_1_1_transform.html#ae192e87ed3621e6c576cc7d698600225", null ],
+    [ "_matrix", "class_incremental_engine_1_1_transform.html#a66966b516936c5a54b7e743bb2e5a645", null ],
+    [ "Identity", "class_incremental_engine_1_1_transform.html#a8b38fa0aa33a2565e6e93e2cfd259291", null ]
 ];

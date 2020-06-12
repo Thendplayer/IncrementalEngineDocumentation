@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: Class Members - Functions</title>
+<title>Incremental Engine: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -89,6 +89,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>Get()
 : <a class="el" href="class_incremental_engine_1_1_engine.html#aa48f4218985b181cd88744de48409095">IncrementalEngine::Engine</a>
+, <a class="el" href="class_incremental_engine_1_1_font_factory.html#a462598c952a9ea1b2a1fc13639c986d5">IncrementalEngine::FontFactory</a>
+</li>
+<li>GetALErrorString()
+: <a class="el" href="class_incremental_engine_1_1_sound_engine.html#a4e1190ef33dd1296bd4f8fc79a0dc391">IncrementalEngine::SoundEngine</a>
 </li>
 <li>GetCamera()
 : <a class="el" href="class_incremental_engine_1_1_rendering_engine.html#a4ee09a385b666f476cc02c1979fc060e">IncrementalEngine::RenderingEngine</a>
@@ -121,7 +125,8 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="class_incremental_engine_1_1_bitmap.html#a7507e85c07e59635dcf9b843a89d5e09">IncrementalEngine::Bitmap</a>
 </li>
 <li>GetInt()
-: <a class="el" href="class_incremental_engine_1_1_save_system.html#a427c0497846b60485b4d3cbb5195d642">IncrementalEngine::SaveSystem</a>
+: <a class="el" href="class_incremental_engine_1_1_kmb_number.html#a8f1da16f75d006dca4a45ba1f8c4c5fb">IncrementalEngine::KmbNumber</a>
+, <a class="el" href="class_incremental_engine_1_1_save_system.html#a427c0497846b60485b4d3cbb5195d642">IncrementalEngine::SaveSystem</a>
 </li>
 <li>GetInverse()
 : <a class="el" href="class_incremental_engine_1_1_transform.html#a03282f099c06d5d406d522f324fb8727">IncrementalEngine::Transform</a>
@@ -157,8 +162,14 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetProjectionMatrix()
 : <a class="el" href="class_incremental_engine_1_1_d3_d_implementation.html#a437041336a49cb54a185d40eb02437b8">IncrementalEngine::D3DImplementation</a>
 </li>
+<li>GetRawNumber()
+: <a class="el" href="class_incremental_engine_1_1_kmb_number.html#a25d0fb5134ba866ab2c17f63bebaa6f7">IncrementalEngine::KmbNumber</a>
+</li>
 <li>GetRect()
 : <a class="el" href="struct_incremental_engine_1_1_float_rect.html#a0028cf9bc1eed44b335f10cccb7136e7">IncrementalEngine::FloatRect</a>
+</li>
+<li>GetResourceItem()
+: <a class="el" href="class_incremental_engine_1_1_resources_manager.html#a3f0835df4e57dc7ce764150c12155749">IncrementalEngine::ResourcesManager</a>
 </li>
 <li>GetRotation()
 : <a class="el" href="class_incremental_engine_1_1_render_camera.html#a10b204a3556a3746cddc9479ba8adfe2">IncrementalEngine::RenderCamera</a>
@@ -189,11 +200,20 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetSound()
 : <a class="el" href="class_incremental_engine_1_1_resources_manager.html#ac8e3c387219e7c2344450711dea6b975">IncrementalEngine::ResourcesManager</a>
 </li>
+<li>GetSource()
+: <a class="el" href="class_incremental_engine_1_1_sound_engine.html#a31afd0131bbf19e8944bdcf1b3d36c95">IncrementalEngine::SoundEngine</a>
+</li>
 <li>GetSourceGain()
 : <a class="el" href="class_incremental_engine_1_1_sound_engine.html#a9ece964456ede3c13b8a4ec99bfe89e4">IncrementalEngine::SoundEngine</a>
 </li>
 <li>GetString()
 : <a class="el" href="class_incremental_engine_1_1_save_system.html#a112d8841ebfaf22c3a4125744456f305">IncrementalEngine::SaveSystem</a>
+</li>
+<li>GetStringTrailingPercentage()
+: <a class="el" href="class_incremental_engine_1_1_kmb_number.html#aa9a00434f286f0cdbaee541a58c18e0d">IncrementalEngine::KmbNumber</a>
+</li>
+<li>GetTextExtent()
+: <a class="el" href="class_incremental_engine_1_1_text.html#ac71755916ef967b4d2203df79be989fb">IncrementalEngine::Text</a>
 </li>
 <li>GetTexture()
 : <a class="el" href="class_incremental_engine_1_1_resources_manager.html#abc7e0d510f644bbec5bb8e923fe3faa5">IncrementalEngine::ResourcesManager</a>
@@ -211,6 +231,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>GetWorldMatrix()
 : <a class="el" href="class_incremental_engine_1_1_d3_d_implementation.html#a91081fdd144389a3d737caeaaef3db8e">IncrementalEngine::D3DImplementation</a>
+, <a class="el" href="class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd">IncrementalEngine::Text</a>
 </li>
 <li>GetWorldPosition()
 : <a class="el" href="class_incremental_engine_1_1_actor.html#a16a2fc7183f19ae96f70407782e436e5">IncrementalEngine::Actor</a>

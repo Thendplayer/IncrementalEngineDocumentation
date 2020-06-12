@@ -19,6 +19,9 @@ var class_incremental_engine_1_1_actor =
     [ "SetPosition", "class_incremental_engine_1_1_actor.html#ae1d9fc22d29fe61747ee7c5e13f53ade", null ],
     [ "SetPosition", "class_incremental_engine_1_1_actor.html#a33af28e219a3c56798ee74d4c0d863a1", null ],
     [ "SetWorldPosition", "class_incremental_engine_1_1_actor.html#a71ef22cf7f7cff864f1afa7bd98c6268", null ],
-    [ "Update", "class_incremental_engine_1_1_actor.html#a61eaeb5c4d48cbb7b34b90baa9081d41", null ],
-    [ "UpdateRecursive", "class_incremental_engine_1_1_actor.html#adf6688ced888007314381d6896ccc6b8", null ]
+    [ "Update", "class_incremental_engine_1_1_actor.html#a07d89af25f687030c387183ecba73350", null ],
+    [ "UpdateRecursive", "class_incremental_engine_1_1_actor.html#adb4a807a40afecaedabf811c5163518b", null ],
+    [ "_active", "class_incremental_engine_1_1_actor.html#a23a9691bb2d93abe57037c328411be70", null ],
+    [ "_children", "class_incremental_engine_1_1_actor.html#aa3faec7057f16170e94ccb5b74d57aa8", null ],
+    [ "_parent", "class_incremental_engine_1_1_actor.html#a657d0c04f13a9ae93334358dc823ab89", null ]
 ];

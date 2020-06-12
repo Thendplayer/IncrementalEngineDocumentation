@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Transformable Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Transformable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_transform
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_transformable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Transformable Class Reference</div>  </div>
@@ -100,10 +101,12 @@ Inheritance diagram for IncrementalEngine::Transformable:</div>
  <div class="center">
   <img src="class_incremental_engine_1_1_transformable.png" usemap="#IncrementalEngine::Transformable_map" alt=""/>
   <map id="IncrementalEngine::Transformable_map" name="IncrementalEngine::Transformable_map">
-<area href="class_incremental_engine_1_1_actor.html" alt="IncrementalEngine::Actor" shape="rect" coords="106,56,309,80"/>
-<area href="class_incremental_engine_1_1_sprite.html" alt="IncrementalEngine::Sprite" shape="rect" coords="0,112,203,136"/>
-<area href="class_incremental_engine_1_1_text.html" alt="IncrementalEngine::Text" shape="rect" coords="213,112,416,136"/>
-<area href="class_incremental_engine_1_1_button.html" alt="IncrementalEngine::Button" shape="rect" coords="0,168,203,192"/>
+<area href="class_incremental_engine_1_1_actor.html" alt="IncrementalEngine::Actor" shape="rect" coords="213,56,416,80"/>
+<area href="class_incremental_engine_1_1_multi_panel.html" alt="IncrementalEngine::MultiPanel" shape="rect" coords="0,112,203,136"/>
+<area href="class_incremental_engine_1_1_sprite.html" alt="IncrementalEngine::Sprite" shape="rect" coords="213,112,416,136"/>
+<area href="class_incremental_engine_1_1_text.html" alt="IncrementalEngine::Text" shape="rect" coords="426,112,629,136"/>
+<area href="class_incremental_engine_1_1_button.html" alt="IncrementalEngine::Button" shape="rect" coords="106,168,309,192"/>
+<area href="class_incremental_engine_1_1_panel.html" alt="IncrementalEngine::Panel" shape="rect" coords="319,168,522,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -152,8 +155,28 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aec30fdefd2c742ca0bc1490017a83323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a></td></tr>
 <tr class="separator:aec30fdefd2c742ca0bc1490017a83323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8e05d1ce773d0c63496a3db309f635c3"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a></td></tr>
+<tr class="separator:a8e05d1ce773d0c63496a3db309f635c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fc7341a13cc7e360f972f719cb35ce"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a></td></tr>
+<tr class="separator:ad1fc7341a13cc7e360f972f719cb35ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6a5cc53eff33c6faf2d21c8d79f648"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a></td></tr>
+<tr class="separator:a5f6a5cc53eff33c6faf2d21c8d79f648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697ae40a9c73db67027fe22b736a6a8f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a></td></tr>
+<tr class="separator:a697ae40a9c73db67027fe22b736a6a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07cd11938c394057faba213f74c0aa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5">_transform</a></td></tr>
+<tr class="separator:ae07cd11938c394057faba213f74c0aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b1cf03cd0077c33eb90ee5b3ea633a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a">_inverseTransform</a></td></tr>
+<tr class="separator:a24b1cf03cd0077c33eb90ee5b3ea633a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cacca8baea30212c0e063c3b811d9d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a></td></tr>
+<tr class="separator:a9cacca8baea30212c0e063c3b811d9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00037">37</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a82a02f04102a2e6df07d42de0bf5bee1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82a02f04102a2e6df07d42de0bf5bee1">&#9670;&nbsp;</a></span>Transformable()</h2>
 
@@ -169,6 +192,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00034">34</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                 :</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>(0, 0),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>(0, 0),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a>(0),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>(1, 1),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5">_transform</a>(),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a>(<span class="keyword">true</span>),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a">_inverseTransform</a>(),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -187,6 +223,17 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00166">166</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a>)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a">_inverseTransform</a> = <a class="code" href="class_incremental_engine_1_1_transformable.html#a3d3ee1c11a9a01144ee0c6843f527bd6">GetTransform</a>().<a class="code" href="class_incremental_engine_1_1_transform.html#a03282f099c06d5d406d522f324fb8727">GetInverse</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a">_inverseTransform</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a775b14619d3a1cd39e45309a814551eb"></a>
@@ -212,6 +259,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00110">110</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac003ade13baf9b385b9b656df0a8adda"></a>
@@ -239,6 +291,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_incremental_engine_1_1_actor.html#a64283892a5c0dfcceb0ff5c48f02fd6a">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00095">95</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3aa584946721d30117c77ac13c7b6aaf"></a>
@@ -264,6 +321,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00100">100</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae97395b2a545145a51bcc8aa19bbea11"></a>
@@ -289,6 +351,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00105">105</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d3ee1c11a9a01144ee0c6843f527bd6"></a>
@@ -306,6 +373,32 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00140">140</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a>)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordtype">float</span> angle  = -<a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a> * 3.141592654f / 180.f;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordtype">float</span> cosine =  <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(std::cos(angle));</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordtype">float</span> sine   =  <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(std::sin(angle));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordtype">float</span> sxc    =  <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.x * cosine;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">float</span> syc    =  <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.y * cosine;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordtype">float</span> sxs    =  <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.x * sine;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordtype">float</span> sys    =  <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.y * sine;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">float</span> tx     = -<a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.x * sxc - <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.y * sys + <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.x;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordtype">float</span> ty     =  <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.x * sxs - <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.y * syc + <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.y;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5">_transform</a> = Transform(</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                sxc, sys, tx,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;               -sxs, syc, ty,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                0.f, 0.f, 1.f</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            );</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5">_transform</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a604cc603317b8e6497c947745fddc163"></a>
@@ -324,6 +417,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00120">120</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ac1d0cb45ea54907849d64607afb810b5">SetPosition</a>(<a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.x + offset.x, <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.y + offset.y);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac570a6d69b47ffb53dfb0bd5447dcea4"></a>
@@ -352,6 +450,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00115">115</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ac1d0cb45ea54907849d64607afb810b5">SetPosition</a>(<a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.x + offsetX, <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.y + offsetY);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8e005841d1273908998361bf3d16516"></a>
@@ -370,6 +473,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00125">125</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a8a07500d25742ca38d5b0c9c42b056e3">SetRotation</a>(<a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a> + angle);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd9b8cbacf44ace1d180656b08e3fc2b"></a>
@@ -388,6 +496,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00135">135</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9">SetScale</a>(<a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.x * factor.x, <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.y * factor.y);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a56bdc087080066d657bf0b1c71067a08"></a>
@@ -416,6 +529,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00130">130</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9">SetScale</a>(<a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.x * factorX, <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.y * factorY);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad16ca44ec555f7f8f4b2f487691481ea"></a>
@@ -442,6 +560,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00090">90</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ad4bd11cb85395e07d5be25e51674c8fe">SetOrigin</a>(origin.x, origin.y);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad4bd11cb85395e07d5be25e51674c8fe"></a>
@@ -478,6 +601,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00082">82</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.x = x;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">_origin</a>.y = y;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa09579c2c9b2a2b50c7309162fb67d61"></a>
@@ -506,6 +637,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_incremental_engine_1_1_actor.html#ae1d9fc22d29fe61747ee7c5e13f53ade">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00054">54</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ac1d0cb45ea54907849d64607afb810b5">SetPosition</a>(position.x, position.y);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac1d0cb45ea54907849d64607afb810b5"></a>
@@ -544,6 +680,14 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_incremental_engine_1_1_actor.html#a33af28e219a3c56798ee74d4c0d863a1">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00046">46</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.x = x;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">_position</a>.y = y;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a07500d25742ca38d5b0c9c42b056e3"></a>
@@ -570,6 +714,16 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00059">59</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(fmod(angle, 360));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a> &lt; 0)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">_rotation</a> += 360.f;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb7bda6e854d4fd6f9b4076e779e1aca"></a>
@@ -596,6 +750,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00077">77</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9">SetScale</a>(factors.x, factors.y);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a24d6569bff487c77cc5ecd12dac242a9"></a>
@@ -632,9 +791,185 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8cpp_source.html#l00069">69</a> of file <a class="el" href="_transformable_8cpp_source.html">Transformable.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.x = factorX;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">_scale</a>.y = factorY;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">_transformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">_inverseTransformNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a24b1cf03cd0077c33eb90ee5b3ea633a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b1cf03cd0077c33eb90ee5b3ea633a">&#9670;&nbsp;</a></span>_inverseTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a> IncrementalEngine::Transformable::_inverseTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00076">76</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="a9cacca8baea30212c0e063c3b811d9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cacca8baea30212c0e063c3b811d9d9">&#9670;&nbsp;</a></span>_inverseTransformNeedUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IncrementalEngine::Transformable::_inverseTransformNeedUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00077">77</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e05d1ce773d0c63496a3db309f635c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e05d1ce773d0c63496a3db309f635c3">&#9670;&nbsp;</a></span>_origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR2 IncrementalEngine::Transformable::_origin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00070">70</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="ad1fc7341a13cc7e360f972f719cb35ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fc7341a13cc7e360f972f719cb35ce">&#9670;&nbsp;</a></span>_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR2 IncrementalEngine::Transformable::_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00071">71</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="a697ae40a9c73db67027fe22b736a6a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697ae40a9c73db67027fe22b736a6a8f">&#9670;&nbsp;</a></span>_rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IncrementalEngine::Transformable::_rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00073">73</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="a5f6a5cc53eff33c6faf2d21c8d79f648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6a5cc53eff33c6faf2d21c8d79f648">&#9670;&nbsp;</a></span>_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR2 IncrementalEngine::Transformable::_scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00072">72</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
+<a id="ae07cd11938c394057faba213f74c0aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07cd11938c394057faba213f74c0aa5">&#9670;&nbsp;</a></span>_transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a> IncrementalEngine::Transformable::_transform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00075">75</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
+</div>
+</div>
 <a id="aec30fdefd2c742ca0bc1490017a83323"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec30fdefd2c742ca0bc1490017a83323">&#9670;&nbsp;</a></span>_transformNeedUpdate</h2>
 
@@ -655,10 +990,26 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_transformable_8h_source.html#l00067">67</a> of file <a class="el" href="_transformable_8h_source.html">Transformable.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ad4bd11cb85395e07d5be25e51674c8fe"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ad4bd11cb85395e07d5be25e51674c8fe">IncrementalEngine::Transformable::SetOrigin</a></div><div class="ttdeci">virtual void SetOrigin(float x, float y)</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8cpp_source.html#l00082">Transformable.cpp:82</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a5f6a5cc53eff33c6faf2d21c8d79f648"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648">IncrementalEngine::Transformable::_scale</a></div><div class="ttdeci">D3DXVECTOR2 _scale</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00072">Transformable.h:72</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a3d3ee1c11a9a01144ee0c6843f527bd6"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a3d3ee1c11a9a01144ee0c6843f527bd6">IncrementalEngine::Transformable::GetTransform</a></div><div class="ttdeci">const Transform &amp; GetTransform() const</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8cpp_source.html#l00140">Transformable.cpp:140</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html_a03282f099c06d5d406d522f324fb8727"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html#a03282f099c06d5d406d522f324fb8727">IncrementalEngine::Transform::GetInverse</a></div><div class="ttdeci">Transform GetInverse() const</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00061">Transform.cpp:61</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ae07cd11938c394057faba213f74c0aa5"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5">IncrementalEngine::Transformable::_transform</a></div><div class="ttdeci">Transform _transform</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00075">Transformable.h:75</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a8e05d1ce773d0c63496a3db309f635c3"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3">IncrementalEngine::Transformable::_origin</a></div><div class="ttdeci">D3DXVECTOR2 _origin</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00070">Transformable.h:70</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ac1d0cb45ea54907849d64607afb810b5"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ac1d0cb45ea54907849d64607afb810b5">IncrementalEngine::Transformable::SetPosition</a></div><div class="ttdeci">virtual void SetPosition(float x, float y)</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8cpp_source.html#l00046">Transformable.cpp:46</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_aec30fdefd2c742ca0bc1490017a83323"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323">IncrementalEngine::Transformable::_transformNeedUpdate</a></div><div class="ttdeci">bool _transformNeedUpdate</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00067">Transformable.h:67</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a697ae40a9c73db67027fe22b736a6a8f"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f">IncrementalEngine::Transformable::_rotation</a></div><div class="ttdeci">float _rotation</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00073">Transformable.h:73</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_ad1fc7341a13cc7e360f972f719cb35ce"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce">IncrementalEngine::Transformable::_position</a></div><div class="ttdeci">D3DXVECTOR2 _position</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00071">Transformable.h:71</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a8a07500d25742ca38d5b0c9c42b056e3"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a8a07500d25742ca38d5b0c9c42b056e3">IncrementalEngine::Transformable::SetRotation</a></div><div class="ttdeci">virtual void SetRotation(float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8cpp_source.html#l00059">Transformable.cpp:59</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a24d6569bff487c77cc5ecd12dac242a9"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9">IncrementalEngine::Transformable::SetScale</a></div><div class="ttdeci">virtual void SetScale(float factorX, float factorY)</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8cpp_source.html#l00069">Transformable.cpp:69</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a24b1cf03cd0077c33eb90ee5b3ea633a"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a">IncrementalEngine::Transformable::_inverseTransform</a></div><div class="ttdeci">Transform _inverseTransform</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00076">Transformable.h:76</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transformable_html_a9cacca8baea30212c0e063c3b811d9d9"><div class="ttname"><a href="class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9">IncrementalEngine::Transformable::_inverseTransformNeedUpdate</a></div><div class="ttdeci">bool _inverseTransformNeedUpdate</div><div class="ttdef"><b>Definition:</b> <a href="_transformable_8h_source.html#l00077">Transformable.h:77</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

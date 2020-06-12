@@ -19,5 +19,12 @@ var class_incremental_engine_1_1_transformable =
     [ "SetRotation", "class_incremental_engine_1_1_transformable.html#a8a07500d25742ca38d5b0c9c42b056e3", null ],
     [ "SetScale", "class_incremental_engine_1_1_transformable.html#aeb7bda6e854d4fd6f9b4076e779e1aca", null ],
     [ "SetScale", "class_incremental_engine_1_1_transformable.html#a24d6569bff487c77cc5ecd12dac242a9", null ],
+    [ "_inverseTransform", "class_incremental_engine_1_1_transformable.html#a24b1cf03cd0077c33eb90ee5b3ea633a", null ],
+    [ "_inverseTransformNeedUpdate", "class_incremental_engine_1_1_transformable.html#a9cacca8baea30212c0e063c3b811d9d9", null ],
+    [ "_origin", "class_incremental_engine_1_1_transformable.html#a8e05d1ce773d0c63496a3db309f635c3", null ],
+    [ "_position", "class_incremental_engine_1_1_transformable.html#ad1fc7341a13cc7e360f972f719cb35ce", null ],
+    [ "_rotation", "class_incremental_engine_1_1_transformable.html#a697ae40a9c73db67027fe22b736a6a8f", null ],
+    [ "_scale", "class_incremental_engine_1_1_transformable.html#a5f6a5cc53eff33c6faf2d21c8d79f648", null ],
+    [ "_transform", "class_incremental_engine_1_1_transformable.html#ae07cd11938c394057faba213f74c0aa5", null ],
     [ "_transformNeedUpdate", "class_incremental_engine_1_1_transformable.html#aec30fdefd2c742ca0bc1490017a83323", null ]
 ];

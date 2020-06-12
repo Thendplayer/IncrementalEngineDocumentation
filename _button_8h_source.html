@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/Button.h Source File</title>
+<title>Incremental Engine: D:/User/Pol/Tecnocampus/4t Curs/TFG/DocumentationSolution/IncrementalEngine/Button.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -88,49 +88,54 @@ $(document).ready(function(){initNavTree('_button_8h_source.html',''); initResiz
 <div class="title">Button.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_button_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BUTTON_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BUTTON_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _BUTTON_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprite_8h.html">Sprite.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Sprite.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_incremental_engine.html">IncrementalEngine</a> </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_incremental_engine_1_1_button.html">Button</a> : <span class="keyword">public</span> <a class="code" href="class_incremental_engine_1_1_sprite.html">Sprite</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_incremental_engine_1_1_button.html#a71fe2192ee0fdc8899baf8c3649d754c">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_incremental_engine_1_1_button.html#a51da5e6fcfea45c02c9ae996a22f6fc4">Update</a>(<span class="keywordtype">float</span> dt) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a8c770bc445ed90e185e7354a797a14b8">Pressed</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a32e690d5141e76a7ff079a31832c0e52">Hold</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a38ab3a9f149c70764070b37ccc0bd176">Released</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        D3DXVECTOR2 _mousePosition;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">bool</span> _clickDetected;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> _mouseOver;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html#a6614800cb19adbd95656a3ead16701b6">   18</a></span>&#160;        D3DXVECTOR2 <a class="code" href="class_incremental_engine_1_1_button.html#a6614800cb19adbd95656a3ead16701b6">_mousePosition</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html#a6e493aa553d88e2bf9c1f15b18dab64b">   19</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a6e493aa553d88e2bf9c1f15b18dab64b">_clickDetected</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html#a5a8590782a6246df7ba967c0b8f17849">   20</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a5a8590782a6246df7ba967c0b8f17849">_mouseOver</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> _pressed;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">bool</span> _released;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html#aabecfe77c9525609a1937badb9e6a628">   22</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#aabecfe77c9525609a1937badb9e6a628">_pressed</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_button.html#ae0e9cfd4e37eb7eb13005a05ad1854c7">   23</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#ae0e9cfd4e37eb7eb13005a05ad1854c7">_released</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">bool</span> MouseInsideBounds();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_incremental_engine_1_1_button.html#a9dc08d129b7ca9ff89c335dacb3f0811">MouseInsideBounds</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a8c770bc445ed90e185e7354a797a14b8"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a8c770bc445ed90e185e7354a797a14b8">IncrementalEngine::Button::Pressed</a></div><div class="ttdeci">bool Pressed()</div><div class="ttdef"><b>Definition:</b> Button.cpp:40</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a71fe2192ee0fdc8899baf8c3649d754c"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a71fe2192ee0fdc8899baf8c3649d754c">IncrementalEngine::Button::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> Button.cpp:6</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a38ab3a9f149c70764070b37ccc0bd176"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a38ab3a9f149c70764070b37ccc0bd176">IncrementalEngine::Button::Released</a></div><div class="ttdeci">bool Released()</div><div class="ttdef"><b>Definition:</b> Button.cpp:50</div></div>
-<div class="ttc" id="a_sprite_8h_html"><div class="ttname"><a href="_sprite_8h.html">Sprite.h</a></div></div>
-<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_sprite_html"><div class="ttname"><a href="class_incremental_engine_1_1_sprite.html">IncrementalEngine::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.h:10</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a32e690d5141e76a7ff079a31832c0e52"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a32e690d5141e76a7ff079a31832c0e52">IncrementalEngine::Button::Hold</a></div><div class="ttdeci">bool Hold()</div><div class="ttdef"><b>Definition:</b> Button.cpp:45</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_button_html"><div class="ttname"><a href="class_incremental_engine_1_1_button.html">IncrementalEngine::Button</a></div><div class="ttdef"><b>Definition:</b> Button.h:9</div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a8c770bc445ed90e185e7354a797a14b8"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a8c770bc445ed90e185e7354a797a14b8">IncrementalEngine::Button::Pressed</a></div><div class="ttdeci">bool Pressed()</div><div class="ttdef"><b>Definition:</b> <a href="_button_8cpp_source.html#l00040">Button.cpp:40</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a51da5e6fcfea45c02c9ae996a22f6fc4"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a51da5e6fcfea45c02c9ae996a22f6fc4">IncrementalEngine::Button::Update</a></div><div class="ttdeci">virtual void Update(float dt) override</div><div class="ttdef"><b>Definition:</b> <a href="_button_8cpp_source.html#l00006">Button.cpp:6</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a6e493aa553d88e2bf9c1f15b18dab64b"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a6e493aa553d88e2bf9c1f15b18dab64b">IncrementalEngine::Button::_clickDetected</a></div><div class="ttdeci">bool _clickDetected</div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00019">Button.h:19</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a9dc08d129b7ca9ff89c335dacb3f0811"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a9dc08d129b7ca9ff89c335dacb3f0811">IncrementalEngine::Button::MouseInsideBounds</a></div><div class="ttdeci">bool MouseInsideBounds()</div><div class="ttdef"><b>Definition:</b> <a href="_button_8cpp_source.html#l00055">Button.cpp:55</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_aabecfe77c9525609a1937badb9e6a628"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#aabecfe77c9525609a1937badb9e6a628">IncrementalEngine::Button::_pressed</a></div><div class="ttdeci">bool _pressed</div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00022">Button.h:22</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_ae0e9cfd4e37eb7eb13005a05ad1854c7"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#ae0e9cfd4e37eb7eb13005a05ad1854c7">IncrementalEngine::Button::_released</a></div><div class="ttdeci">bool _released</div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00023">Button.h:23</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a38ab3a9f149c70764070b37ccc0bd176"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a38ab3a9f149c70764070b37ccc0bd176">IncrementalEngine::Button::Released</a></div><div class="ttdeci">bool Released()</div><div class="ttdef"><b>Definition:</b> <a href="_button_8cpp_source.html#l00050">Button.cpp:50</a></div></div>
+<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00004">Actor.cpp:5</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a5a8590782a6246df7ba967c0b8f17849"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a5a8590782a6246df7ba967c0b8f17849">IncrementalEngine::Button::_mouseOver</a></div><div class="ttdeci">bool _mouseOver</div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00020">Button.h:20</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_sprite_html"><div class="ttname"><a href="class_incremental_engine_1_1_sprite.html">IncrementalEngine::Sprite</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprite_8h_source.html#l00009">Sprite.h:10</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a32e690d5141e76a7ff079a31832c0e52"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a32e690d5141e76a7ff079a31832c0e52">IncrementalEngine::Button::Hold</a></div><div class="ttdeci">bool Hold()</div><div class="ttdef"><b>Definition:</b> <a href="_button_8cpp_source.html#l00045">Button.cpp:45</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html_a6614800cb19adbd95656a3ead16701b6"><div class="ttname"><a href="class_incremental_engine_1_1_button.html#a6614800cb19adbd95656a3ead16701b6">IncrementalEngine::Button::_mousePosition</a></div><div class="ttdeci">D3DXVECTOR2 _mousePosition</div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00018">Button.h:18</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_button_html"><div class="ttname"><a href="class_incremental_engine_1_1_button.html">IncrementalEngine::Button</a></div><div class="ttdef"><b>Definition:</b> <a href="_button_8h_source.html#l00008">Button.h:9</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="_button_8h.html">Button.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a6646cac019aa24d99494a34a2f2a42f.html">DocumentationSolution</a></li><li class="navelem"><a class="el" href="dir_452023f9ca066ca6ecda26346c167e86.html">IncrementalEngine</a></li><li class="navelem"><b>Button.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

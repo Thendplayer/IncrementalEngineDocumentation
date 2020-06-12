@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Sound Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Sound Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_sound.htm
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_sound-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Sound Class Reference</div>  </div>
@@ -106,10 +107,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7309804af6fe843a12757888c18fbc0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">Buffer</a></td></tr>
+<tr class="memitem:a7309804af6fe843a12757888c18fbc0b"><td class="memItemLeft" align="right" valign="top">ALuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">Buffer</a></td></tr>
 <tr class="separator:a7309804af6fe843a12757888c18fbc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acb550cef219431a8deae2b665655cbe5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">_filename</a></td></tr>
+<tr class="separator:acb550cef219431a8deae2b665655cbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_sound_8h_source.html#l00013">13</a> of file <a class="el" href="_sound_8h_source.html">Sound.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab28d3a99e728c144f8220c10bea588cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab28d3a99e728c144f8220c10bea588cc">&#9670;&nbsp;</a></span>Sound()</h2>
 
@@ -126,6 +135,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sound_8cpp_source.html#l00008">8</a> of file <a class="el" href="_sound_8cpp_source.html">Sound.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                   :</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">_filename</a>(filename),</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">Buffer</a>(NULL)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">bool</span> formatCheck = IS_WAV(<a class="code" href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">_filename</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        assert(<span class="stringliteral">&quot;The sound format you tried to load is incompatible.&quot;</span> &amp;&amp; formatCheck);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01d55c2d71cbcaac1e58a3fbf47ba277"></a>
@@ -151,6 +169,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sound_8cpp_source.html#l00016">16</a> of file <a class="el" href="_sound_8cpp_source.html">Sound.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        alDeleteBuffers(1, &amp;<a class="code" href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">Buffer</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -169,9 +192,71 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_sound_8cpp_source.html#l00021">21</a> of file <a class="el" href="_sound_8cpp_source.html">Sound.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        FILE* file;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ALenum error;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ALuint buffer;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        alGenBuffers(1, &amp;buffer);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> ((error = alGetError()) != AL_NO_ERROR)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            alDeleteBuffers(1, &amp;buffer);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        fopen_s(&amp;file, <a class="code" href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">_filename</a>.c_str(), <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (file == NULL)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            alDeleteBuffers(1, &amp;buffer);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            fclose(file);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        buffer = alutCreateBufferFromFile(<a class="code" href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">_filename</a>.c_str());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> ((error = alGetError()) != AL_NO_ERROR)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            alDeleteBuffers(1, &amp;buffer);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> CO_E_ERRORINAPP;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">Buffer</a> = buffer;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="acb550cef219431a8deae2b665655cbe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb550cef219431a8deae2b665655cbe5">&#9670;&nbsp;</a></span>_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string IncrementalEngine::Sound::_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sound_8h_source.html#l00024">24</a> of file <a class="el" href="_sound_8h_source.html">Sound.h</a>.</p>
+
+</div>
+</div>
 <a id="a7309804af6fe843a12757888c18fbc0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7309804af6fe843a12757888c18fbc0b">&#9670;&nbsp;</a></span>Buffer</h2>
 
@@ -179,15 +264,19 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a> IncrementalEngine::Sound::Buffer</td>
+          <td class="memname">ALuint IncrementalEngine::Sound::Buffer</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sound_8h_source.html#l00016">16</a> of file <a class="el" href="_sound_8h_source.html">Sound.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_sound_html_acb550cef219431a8deae2b665655cbe5"><div class="ttname"><a href="class_incremental_engine_1_1_sound.html#acb550cef219431a8deae2b665655cbe5">IncrementalEngine::Sound::_filename</a></div><div class="ttdeci">std::string _filename</div><div class="ttdef"><b>Definition:</b> <a href="_sound_8h_source.html#l00024">Sound.h:24</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_sound_html_a7309804af6fe843a12757888c18fbc0b"><div class="ttname"><a href="class_incremental_engine_1_1_sound.html#a7309804af6fe843a12757888c18fbc0b">IncrementalEngine::Sound::Buffer</a></div><div class="ttdeci">ALuint Buffer</div><div class="ttdef"><b>Definition:</b> <a href="_sound_8h_source.html#l00016">Sound.h:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

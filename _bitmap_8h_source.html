@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: D:/User/Pol/Tecnocampus/4t Curs/TFG/IncrementalEngine/IncrementalEngine/IncrementalEngine/Bitmap.h Source File</title>
+<title>Incremental Engine: D:/User/Pol/Tecnocampus/4t Curs/TFG/DocumentationSolution/IncrementalEngine/Bitmap.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -88,11 +88,11 @@ $(document).ready(function(){initNavTree('_bitmap_8h_source.html',''); initResiz
 <div class="title">Bitmap.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_bitmap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BITMAP_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BITMAP_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _BITMAP_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_texture_base_8h.html">TextureBase.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_window_8h.html">RenderWindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;TextureBase.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;RenderWindow.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_incremental_engine.html">IncrementalEngine</a> </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -108,46 +108,56 @@ $(document).ready(function(){initNavTree('_bitmap_8h_source.html',''); initResiz
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_incremental_engine_1_1_bitmap.html#a7507e85c07e59635dcf9b843a89d5e09">GetIndexCount</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">struct </span>VertexType</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html">   21</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html">VertexType</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            D3DXVECTOR3 position;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            D3DXVECTOR2 texture;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#ade04dee759d3e7c6715ec7cd35f73131">   23</a></span>&#160;            D3DXVECTOR3 <a class="code" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#ade04dee759d3e7c6715ec7cd35f73131">position</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#a6cf15da3e70afd9c6433e927a65705f8">   24</a></span>&#160;            D3DXVECTOR2 <a class="code" href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#a6cf15da3e70afd9c6433e927a65705f8">texture</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        };</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ID3D11Buffer* _vertexBuffer;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ID3D11Buffer* _indexBuffer;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_bitmap.html#a69698a7f42bd96c2bd1c546c691913ab">   27</a></span>&#160;        ID3D11Buffer* <a class="code" href="class_incremental_engine_1_1_bitmap.html#a69698a7f42bd96c2bd1c546c691913ab">_vertexBuffer</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_bitmap.html#a6e7b386bb95be1a19a669d28bd3e3e70">   28</a></span>&#160;        ID3D11Buffer* <a class="code" href="class_incremental_engine_1_1_bitmap.html#a6e7b386bb95be1a19a669d28bd3e3e70">_indexBuffer</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> _vertexCount, _indexCount;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_bitmap.html#a2b0672c2b83d7744ca85779811f24558">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_incremental_engine_1_1_bitmap.html#a2b0672c2b83d7744ca85779811f24558">_vertexCount</a>, <a class="code" href="class_incremental_engine_1_1_bitmap.html#a27c81cd66af7a04513fcc12c75f168ba">_indexCount</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a> _previousTransform;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a> _previousBounds;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_bitmap.html#a28d67c668624013e80daa4eb9d710743">   32</a></span>&#160;        <a class="code" href="class_incremental_engine_1_1_transform.html">Transform</a> <a class="code" href="class_incremental_engine_1_1_bitmap.html#a28d67c668624013e80daa4eb9d710743">_previousTransform</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_incremental_engine_1_1_bitmap.html#a0f53665e0f2a94f3e2a4879c3a3c301a">   33</a></span>&#160;        <a class="code" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a> <a class="code" href="class_incremental_engine_1_1_bitmap.html#a0f53665e0f2a94f3e2a4879c3a3c301a">_previousBounds</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        HRESULT InitializeBuffers();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        HRESULT UpdateBuffers(ID3D11DeviceContext* deviceContext);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> RenderBuffers(ID3D11DeviceContext* deviceContext);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        HRESULT <a class="code" href="class_incremental_engine_1_1_bitmap.html#a8eb67328f88cb9ca5fedd41a94394cb4">InitializeBuffers</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        HRESULT <a class="code" href="class_incremental_engine_1_1_bitmap.html#a0d2a4611aea39a28783938e6352e949e">UpdateBuffers</a>(ID3D11DeviceContext* deviceContext);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_incremental_engine_1_1_bitmap.html#a80ca1eda910a172d1043b513a430dce8">RenderBuffers</a>(ID3D11DeviceContext* deviceContext);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html">IncrementalEngine::Bitmap</a></div><div class="ttdef"><b>Definition:</b> Bitmap.h:10</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_texture_html"><div class="ttname"><a href="class_incremental_engine_1_1_texture.html">IncrementalEngine::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:13</div></div>
-<div class="ttc" id="astruct_incremental_engine_1_1_float_rect_html"><div class="ttname"><a href="struct_incremental_engine_1_1_float_rect.html">IncrementalEngine::FloatRect</a></div><div class="ttdef"><b>Definition:</b> FloatRect.h:9</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_transform_html"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html">IncrementalEngine::Transform</a></div><div class="ttdef"><b>Definition:</b> Transform.h:42</div></div>
-<div class="ttc" id="a_texture_base_8h_html"><div class="ttname"><a href="_texture_base_8h.html">TextureBase.h</a></div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_abd14e0def08a5f9dafb5bc1fbfbca5d0"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#abd14e0def08a5f9dafb5bc1fbfbca5d0">IncrementalEngine::Bitmap::Create</a></div><div class="ttdeci">HRESULT Create(Texture *texture)</div><div class="ttdef"><b>Definition:</b> Bitmap.cpp:21</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a4dab58b872d88d7dc60292b8b17933ff"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a4dab58b872d88d7dc60292b8b17933ff">IncrementalEngine::Bitmap::~Bitmap</a></div><div class="ttdeci">~Bitmap() override</div><div class="ttdef"><b>Definition:</b> Bitmap.cpp:15</div></div>
-<div class="ttc" id="a_render_window_8h_html"><div class="ttname"><a href="_render_window_8h.html">RenderWindow.h</a></div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a681e428880a77a2c8763a32e206fd0c6"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a681e428880a77a2c8763a32e206fd0c6">IncrementalEngine::Bitmap::Draw</a></div><div class="ttdeci">virtual HRESULT Draw(ID3D11DeviceContext *deviceContext) override</div><div class="ttdef"><b>Definition:</b> Bitmap.cpp:46</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a7507e85c07e59635dcf9b843a89d5e09"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a7507e85c07e59635dcf9b843a89d5e09">IncrementalEngine::Bitmap::GetIndexCount</a></div><div class="ttdeci">int GetIndexCount()</div><div class="ttdef"><b>Definition:</b> Bitmap.cpp:67</div></div>
-<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_af6adf2ad16ac53ea6e775d843f04451c"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#af6adf2ad16ac53ea6e775d843f04451c">IncrementalEngine::Bitmap::Bitmap</a></div><div class="ttdeci">Bitmap()</div><div class="ttdef"><b>Definition:</b> Bitmap.cpp:7</div></div>
-<div class="ttc" id="aclass_incremental_engine_1_1_texture_base_html"><div class="ttname"><a href="class_incremental_engine_1_1_texture_base.html">IncrementalEngine::TextureBase</a></div><div class="ttdef"><b>Definition:</b> TextureBase.h:15</div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a2b0672c2b83d7744ca85779811f24558"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a2b0672c2b83d7744ca85779811f24558">IncrementalEngine::Bitmap::_vertexCount</a></div><div class="ttdeci">int _vertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00030">Bitmap.h:30</a></div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_bitmap_1_1_vertex_type_html_ade04dee759d3e7c6715ec7cd35f73131"><div class="ttname"><a href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#ade04dee759d3e7c6715ec7cd35f73131">IncrementalEngine::Bitmap::VertexType::position</a></div><div class="ttdeci">D3DXVECTOR3 position</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00023">Bitmap.h:23</a></div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_bitmap_1_1_vertex_type_html_a6cf15da3e70afd9c6433e927a65705f8"><div class="ttname"><a href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html#a6cf15da3e70afd9c6433e927a65705f8">IncrementalEngine::Bitmap::VertexType::texture</a></div><div class="ttdeci">D3DXVECTOR2 texture</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00024">Bitmap.h:24</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html">IncrementalEngine::Bitmap</a></div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00009">Bitmap.h:10</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a0f53665e0f2a94f3e2a4879c3a3c301a"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a0f53665e0f2a94f3e2a4879c3a3c301a">IncrementalEngine::Bitmap::_previousBounds</a></div><div class="ttdeci">FloatRect _previousBounds</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00033">Bitmap.h:33</a></div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_bitmap_1_1_vertex_type_html"><div class="ttname"><a href="struct_incremental_engine_1_1_bitmap_1_1_vertex_type.html">IncrementalEngine::Bitmap::VertexType</a></div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00021">Bitmap.h:22</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_html"><div class="ttname"><a href="class_incremental_engine_1_1_texture.html">IncrementalEngine::Texture</a></div><div class="ttdef"><b>Definition:</b> <a href="_texture_8h_source.html#l00012">Texture.h:13</a></div></div>
+<div class="ttc" id="astruct_incremental_engine_1_1_float_rect_html"><div class="ttname"><a href="struct_incremental_engine_1_1_float_rect.html">IncrementalEngine::FloatRect</a></div><div class="ttdef"><b>Definition:</b> <a href="_float_rect_8h_source.html#l00008">FloatRect.h:9</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a27c81cd66af7a04513fcc12c75f168ba"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a27c81cd66af7a04513fcc12c75f168ba">IncrementalEngine::Bitmap::_indexCount</a></div><div class="ttdeci">int _indexCount</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00030">Bitmap.h:30</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_transform_html"><div class="ttname"><a href="class_incremental_engine_1_1_transform.html">IncrementalEngine::Transform</a></div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00041">Transform.h:42</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_abd14e0def08a5f9dafb5bc1fbfbca5d0"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#abd14e0def08a5f9dafb5bc1fbfbca5d0">IncrementalEngine::Bitmap::Create</a></div><div class="ttdeci">HRESULT Create(Texture *texture)</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00021">Bitmap.cpp:21</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a4dab58b872d88d7dc60292b8b17933ff"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a4dab58b872d88d7dc60292b8b17933ff">IncrementalEngine::Bitmap::~Bitmap</a></div><div class="ttdeci">~Bitmap() override</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00015">Bitmap.cpp:15</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a6e7b386bb95be1a19a669d28bd3e3e70"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a6e7b386bb95be1a19a669d28bd3e3e70">IncrementalEngine::Bitmap::_indexBuffer</a></div><div class="ttdeci">ID3D11Buffer * _indexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00028">Bitmap.h:28</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a80ca1eda910a172d1043b513a430dce8"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a80ca1eda910a172d1043b513a430dce8">IncrementalEngine::Bitmap::RenderBuffers</a></div><div class="ttdeci">void RenderBuffers(ID3D11DeviceContext *deviceContext)</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00211">Bitmap.cpp:211</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a681e428880a77a2c8763a32e206fd0c6"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a681e428880a77a2c8763a32e206fd0c6">IncrementalEngine::Bitmap::Draw</a></div><div class="ttdeci">virtual HRESULT Draw(ID3D11DeviceContext *deviceContext) override</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00046">Bitmap.cpp:46</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a7507e85c07e59635dcf9b843a89d5e09"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a7507e85c07e59635dcf9b843a89d5e09">IncrementalEngine::Bitmap::GetIndexCount</a></div><div class="ttdeci">int GetIndexCount()</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00067">Bitmap.cpp:67</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a0d2a4611aea39a28783938e6352e949e"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a0d2a4611aea39a28783938e6352e949e">IncrementalEngine::Bitmap::UpdateBuffers</a></div><div class="ttdeci">HRESULT UpdateBuffers(ID3D11DeviceContext *deviceContext)</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00144">Bitmap.cpp:144</a></div></div>
+<div class="ttc" id="anamespace_incremental_engine_html"><div class="ttname"><a href="namespace_incremental_engine.html">IncrementalEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00004">Actor.cpp:5</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_af6adf2ad16ac53ea6e775d843f04451c"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#af6adf2ad16ac53ea6e775d843f04451c">IncrementalEngine::Bitmap::Bitmap</a></div><div class="ttdeci">Bitmap()</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00007">Bitmap.cpp:7</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_texture_base_html"><div class="ttname"><a href="class_incremental_engine_1_1_texture_base.html">IncrementalEngine::TextureBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_texture_base_8h_source.html#l00014">TextureBase.h:15</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a8eb67328f88cb9ca5fedd41a94394cb4"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a8eb67328f88cb9ca5fedd41a94394cb4">IncrementalEngine::Bitmap::InitializeBuffers</a></div><div class="ttdeci">HRESULT InitializeBuffers()</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8cpp_source.html#l00072">Bitmap.cpp:72</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a28d67c668624013e80daa4eb9d710743"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a28d67c668624013e80daa4eb9d710743">IncrementalEngine::Bitmap::_previousTransform</a></div><div class="ttdeci">Transform _previousTransform</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00032">Bitmap.h:32</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_bitmap_html_a69698a7f42bd96c2bd1c546c691913ab"><div class="ttname"><a href="class_incremental_engine_1_1_bitmap.html#a69698a7f42bd96c2bd1c546c691913ab">IncrementalEngine::Bitmap::_vertexBuffer</a></div><div class="ttdeci">ID3D11Buffer * _vertexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_8h_source.html#l00027">Bitmap.h:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ff7f34fff4f6f89c56dd59866fa1a803.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_69583df2444ecaa07399176bc4b5e745.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="dir_3268940b77f022e4fbd07f575118c0ea.html">IncrementalEngine</a></li><li class="navelem"><a class="el" href="_bitmap_8h.html">Bitmap.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a6646cac019aa24d99494a34a2f2a42f.html">DocumentationSolution</a></li><li class="navelem"><a class="el" href="dir_452023f9ca066ca6ecda26346c167e86.html">IncrementalEngine</a></li><li class="navelem"><b>Bitmap.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

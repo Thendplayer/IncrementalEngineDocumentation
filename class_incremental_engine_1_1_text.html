@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IncrementalEngine: IncrementalEngine::Text Class Reference</title>
+<title>Incremental Engine: IncrementalEngine::Text Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="IncrementalEngine_MiniLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">IncrementalEngine
-   &#160;<span id="projectnumber">1.0.5</span>
+   <div id="projectname">Incremental Engine
+   &#160;<span id="projectnumber">1.0.6</span>
    </div>
    <div id="projectbrief">A 2D Game Engine to create Idle Games</div>
   </td>
@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_incremental_engine_1_1_text.html
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_incremental_engine_1_1_text-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementalEngine::Text Class Reference</div>  </div>
@@ -150,15 +152,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a8c8ef45e5b38dc78f4ccaa4bdbef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96d87a657de8df4fb42153b3c321924"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#ab96d87a657de8df4fb42153b3c321924">GetLocalBounds</a> () override</td></tr>
 <tr class="separator:ab96d87a657de8df4fb42153b3c321924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefefd83ae276ab9c2c3252c755da28fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#aefefd83ae276ab9c2c3252c755da28fd">Update</a> () override</td></tr>
-<tr class="separator:aefefd83ae276ab9c2c3252c755da28fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ab3a361441c24f6a27afeb0cf673e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a88ab3a361441c24f6a27afeb0cf673e4">Update</a> (float dt) override</td></tr>
+<tr class="separator:a88ab3a361441c24f6a27afeb0cf673e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2ecba5f9136160f94855eb58cb6854"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a8b2ecba5f9136160f94855eb58cb6854">Draw</a> (ID3D11DeviceContext *deviceContext) override</td></tr>
 <tr class="separator:a8b2ecba5f9136160f94855eb58cb6854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_incremental_engine_1_1_actor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_incremental_engine_1_1_actor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_incremental_engine_1_1_actor.html">IncrementalEngine::Actor</a></td></tr>
 <tr class="memitem:ab627150352b4385a62f0492eadf7e673 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#ab627150352b4385a62f0492eadf7e673">~Actor</a> ()</td></tr>
 <tr class="separator:ab627150352b4385a62f0492eadf7e673 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6688ced888007314381d6896ccc6b8 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#adf6688ced888007314381d6896ccc6b8">UpdateRecursive</a> ()</td></tr>
-<tr class="separator:adf6688ced888007314381d6896ccc6b8 inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4a807a40afecaedabf811c5163518b inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#adb4a807a40afecaedabf811c5163518b">UpdateRecursive</a> (float dt)</td></tr>
+<tr class="separator:adb4a807a40afecaedabf811c5163518b inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77017129803e160a9ac3920ae673c03a inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#a77017129803e160a9ac3920ae673c03a">DrawRecursive</a> (ID3D11DeviceContext *deviceContext)</td></tr>
 <tr class="separator:a77017129803e160a9ac3920ae673c03a inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05eec992e681bad92881ab7f56ada0cd inherit pub_methods_class_incremental_engine_1_1_actor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_incremental_engine_1_1_float_rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_actor.html#a05eec992e681bad92881ab7f56ada0cd">GetGlobalBounds</a> ()</td></tr>
@@ -223,6 +225,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc8bed343ba6200af02f3138afd0f652 inherit pub_methods_class_incremental_engine_1_1_transformable"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_transformable.html#adc8bed343ba6200af02f3138afd0f652">GetInverseTransform</a> () const</td></tr>
 <tr class="separator:adc8bed343ba6200af02f3138afd0f652 inherit pub_methods_class_incremental_engine_1_1_transformable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac71755916ef967b4d2203df79be989fb"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#ac71755916ef967b4d2203df79be989fb">GetTextExtent</a> ()</td></tr>
+<tr class="separator:ac71755916ef967b4d2203df79be989fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a92358a43147023cdc8f1dc1ad634dd"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd">GetWorldMatrix</a> (<a class="el" href="class_incremental_engine_1_1_actor.html">Actor</a> *actor)</td></tr>
+<tr class="separator:a9a92358a43147023cdc8f1dc1ad634dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adf073d05853c6a1b4e9c5850b7abe1ab"><td class="memItemLeft" align="right" valign="top">IFW1FontWrapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a></td></tr>
+<tr class="separator:adf073d05853c6a1b4e9c5850b7abe1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f2f5836a26e94cfcfeebf83bfe140a"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#ac1f2f5836a26e94cfcfeebf83bfe140a">_fontWrapperMatrix</a></td></tr>
+<tr class="separator:ac1f2f5836a26e94cfcfeebf83bfe140a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c338cf1592f7259dab8a98751a1e2d"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a></td></tr>
+<tr class="separator:af6c338cf1592f7259dab8a98751a1e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348f8a3b0734e2e84708e00ce86a3296"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a></td></tr>
+<tr class="separator:a348f8a3b0734e2e84708e00ce86a3296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7b66d192b27fb80642d8080b90c592"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">_fontSize</a></td></tr>
+<tr class="separator:a1a7b66d192b27fb80642d8080b90c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e4cb9f7852526fb1191a82fa2cad99"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">_color</a></td></tr>
+<tr class="separator:a86e4cb9f7852526fb1191a82fa2cad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b4981085f3319fc18aeaa43b62fd86"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86">_flags</a></td></tr>
+<tr class="separator:af8b4981085f3319fc18aeaa43b62fd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d05c7dd9906d357f208b821f062da92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a></td></tr>
+<tr class="separator:a0d05c7dd9906d357f208b821f062da92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220275f26689b744bf3029bec5aa51aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_text.html#a220275f26689b744bf3029bec5aa51aa">_previousTransform</a></td></tr>
+<tr class="separator:a220275f26689b744bf3029bec5aa51aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_incremental_engine_1_1_drawable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_incremental_engine_1_1_drawable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_incremental_engine_1_1_drawable.html">IncrementalEngine::Drawable</a></td></tr>
@@ -239,7 +269,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:accdcbebd67d3619c47915700cceb3bda inherit pro_attribs_class_incremental_engine_1_1_drawable"><td class="memItemLeft" align="right" valign="top">ID3D11Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_incremental_engine_1_1_drawable.html#accdcbebd67d3619c47915700cceb3bda">_device</a></td></tr>
 <tr class="separator:accdcbebd67d3619c47915700cceb3bda inherit pro_attribs_class_incremental_engine_1_1_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00012">12</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae06b428eb1d6e07c25e7e97a5f47559a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae06b428eb1d6e07c25e7e97a5f47559a">&#9670;&nbsp;</a></span>FontAlignment</h2>
 
@@ -263,6 +296,19 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="ae06b428eb1d6e07c25e7e97a5f47559aa64eeefa305fe8fefa4e24276474fc93f"></a>BOTTOM_RIGHT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00017">17</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa1392cc0f828e3189aa11e09e2c772c1f">TOP_LEFT</a> = FW1_TOP | FW1_LEFT,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa12d485d0d3091d11480e0d85c7086895">TOP_CENTER</a> = FW1_TOP | FW1_CENTER,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa0d96042f5596d4164e170e3933b165da">TOP_RIGHT</a> = FW1_TOP | FW1_RIGHT,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa436ba5d7e14bef9e5c5a1eb95420b4e0">CENTER_LEFT</a> = FW1_VCENTER | FW1_LEFT,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa60ed2ea00c32e3c5f78107521fb8056c">CENTER</a> = FW1_VCENTER | FW1_CENTER,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aaea2f239977f220b87216788a3d75746d">CENTER_RIGHT</a> = FW1_VCENTER | FW1_RIGHT,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa0a37d14eb0347a17ce7d1c64b92e2ac0">BOTTOM_LEFT</a> = FW1_BOTTOM | FW1_LEFT,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa29f840448e8b828e0c64de8e83da19ab">BOTTOM_CENTER</a> = FW1_BOTTOM | FW1_CENTER,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa64eeefa305fe8fefa4e24276474fc93f">BOTTOM_RIGHT</a> = FW1_BOTTOM | FW1_RIGHT</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -281,6 +327,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00010">10</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;               :</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a>(NULL),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a>(L<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a>(L<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">_fontSize</a>(12),</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">_color</a>(0)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86">_flags</a> = FontAlignment::CENTER;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aff4d391e4c13f8d6c08353343d40079f"></a>
@@ -306,6 +363,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00020">20</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        CHECKED_RELEASE(<a class="code" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -324,6 +386,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00072">72</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a> = L<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">Center</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8b2ecba5f9136160f94855eb58cb6854"></a>
@@ -352,6 +421,25 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#ad3f695905f9980ed64dc18553c2aae9f">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00126">126</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        FW1_RECTF rect = { 0.f, 0.f, 0.f, 0.f };</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a>-&gt;DrawString(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            deviceContext,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a>.c_str(),</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a>.c_str(),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">_fontSize</a>,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            &amp;rect,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">_color</a>,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            NULL,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keyword">reinterpret_cast&lt;</span>FLOAT*<span class="keyword">&gt;</span>(&amp;<a class="code" href="class_incremental_engine_1_1_text.html#ac1f2f5836a26e94cfcfeebf83bfe140a">_fontWrapperMatrix</a>),</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86">_flags</a> | FW1_NOWORDWRAP | FW1_RESTORESTATE</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        );</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab96d87a657de8df4fb42153b3c321924"></a>
@@ -379,6 +467,126 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#ab04113cd239eefdfce9bdcf7246d8e51">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00094">94</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        D3DXVECTOR2 extent = <a class="code" href="class_incremental_engine_1_1_text.html#ac71755916ef967b4d2203df79be989fb">GetTextExtent</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        FloatRect bounds = {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            0.f,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            0.f,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            extent.x,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            extent.y</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> bounds;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac71755916ef967b4d2203df79be989fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71755916ef967b4d2203df79be989fb">&#9670;&nbsp;</a></span>GetTextExtent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR2 IncrementalEngine::Text::GetTextExtent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00145">145</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        FW1_RECTF nullRect = { 0.f, 0.f, 0.f, 0.f };</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        FW1_RECTF rect = <a class="code" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a>-&gt;MeasureString(</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a>.c_str(), </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a>.c_str(),</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">_fontSize</a>, </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            &amp;nullRect, </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            FW1_NOWORDWRAP</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        );</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> { rect.Right - rect.Left, rect.Bottom - rect.Top };</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a92358a43147023cdc8f1dc1ad634dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a92358a43147023cdc8f1dc1ad634dd">&#9670;&nbsp;</a></span>GetWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX IncrementalEngine::Text::GetWorldMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_incremental_engine_1_1_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00159">159</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        XMMATRIX parentMatrix = XMMatrixIdentity();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">auto</span> parent = actor-&gt;GetParent();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">if</span> (parent != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            parentMatrix = <a class="code" href="class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd">GetWorldMatrix</a>(parent);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        D3DXVECTOR2 origin = actor-&gt;GetOrigin();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        D3DXVECTOR2 scale = actor-&gt;GetScale();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        D3DXVECTOR2 position = actor-&gt;GetPosition();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordtype">float</span> rotation = DEG2RAD(actor-&gt;GetRotation());</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        XMMATRIX originMatrix = XMMatrixTranslation(</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            origin.x,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            origin.y,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            0.f</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        );</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        XMMATRIX rotationMatrix = XMMatrixRotationZ(rotation);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        XMMATRIX translationMatrix = XMMatrixTranslation(</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            position.x,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            position.y,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            1.f</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        );</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        XMMATRIX scaleMatrix = XMMatrixScaling(</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            scale.x,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            scale.y,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            1.f</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        );</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        XMMATRIX actorMatrix = scaleMatrix </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            * rotationMatrix</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            * translationMatrix;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> actorMatrix * parentMatrix;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afdb52f87c489035c14a2da715d46f78f"></a>
@@ -406,6 +614,27 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#a8d68d1e10cdceeb1fc57ed3dfa4fe417">IncrementalEngine::Actor</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00025">25</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a>.empty())</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a> = DEFAULT_FONT_FAMILY;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        HRESULT result = <a class="code" href="class_incremental_engine_1_1_font_factory.html#a462598c952a9ea1b2a1fc13639c986d5">FontFactory::Get</a>()-&gt;CreateFontWrapper(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_incremental_engine_1_1_drawable.html#accdcbebd67d3619c47915700cceb3bda">_device</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a>.c_str(),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            &amp;<a class="code" href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">_fontWrapper</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (FAILED(result))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            MessageBox(NULL, TEXT(<span class="stringliteral">&quot;CreateFontWrapper&quot;</span>), TEXT(<span class="stringliteral">&quot;Error&quot;</span>), MB_OK);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f3efa703b4ac82ea38bf6b2b9aa7386"></a>
@@ -424,6 +653,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00046">46</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">_fontFamily</a> = fontFamily;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">Center</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a64c668c1e701655310687c2625b7eed4"></a>
@@ -442,6 +678,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00060">60</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86">_flags</a> = alignment;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0c7ee872cbaa94f23836e49150059643"></a>
@@ -460,6 +701,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00053">53</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">_fontSize</a> = fontSize;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">Center</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9c97964261f591ab3a8436363d0165fe"></a>
@@ -478,6 +726,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00065">65</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">_value</a> = value;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">Center</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af2b2086646668d69d667625865fd59f0"></a>
@@ -496,6 +751,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00084">84</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a50a860fc9e4ebd6d993502ff17adb701">SetTextColor</a>(color.x, color.y, color.z, color.w);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a50a860fc9e4ebd6d993502ff17adb701"></a>
@@ -536,6 +796,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00079">79</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">_color</a> = DirectX::PackedVector::XMCOLOR::XMCOLOR(b / 255, g / 255, r / 255, a);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a8c8ef45e5b38dc78f4ccaa4bdbef31"></a>
@@ -554,10 +819,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00089">89</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">_color</a> = color;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="aefefd83ae276ab9c2c3252c755da28fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefefd83ae276ab9c2c3252c755da28fd">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a88ab3a361441c24f6a27afeb0cf673e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ab3a361441c24f6a27afeb0cf673e4">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +838,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void IncrementalEngine::Text::Update </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -579,12 +850,278 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#a61eaeb5c4d48cbb7b34b90baa9081d41">IncrementalEngine::Actor</a>.</p>
+<p>Reimplemented from <a class="el" href="class_incremental_engine_1_1_actor.html#a07d89af25f687030c387183ecba73350">IncrementalEngine::Actor</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_text_8cpp_source.html#l00107">107</a> of file <a class="el" href="_text_8cpp_source.html">Text.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        Transform transform = <a class="code" href="class_incremental_engine_1_1_actor.html#aac79ae6d406d5ea75e0948917e307509">GetWorldTransform</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> || transform != <a class="code" href="class_incremental_engine_1_1_text.html#a220275f26689b744bf3029bec5aa51aa">_previousTransform</a>)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a220275f26689b744bf3029bec5aa51aa">_previousTransform</a> = transform;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            XMMATRIX orthoProjectionMatrix = XMMatrixOrthographicLH(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <a class="code" href="class_incremental_engine_1_1_drawable.html#a7f6924d11d3f845ec4f362407375516e">_renderWindow</a>-&gt;<a class="code" href="class_incremental_engine_1_1_render_window.html#a4649083a968f518de76e0ba42aeba7d4">GetScreenWidth</a>(),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                -<a class="code" href="class_incremental_engine_1_1_drawable.html#a7f6924d11d3f845ec4f362407375516e">_renderWindow</a>-&gt;<a class="code" href="class_incremental_engine_1_1_render_window.html#a56d90edc6c6a059f88c0337c5687d3ca">GetScreenHeight</a>(),</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <a class="code" href="class_incremental_engine_1_1_drawable.html#a7f6924d11d3f845ec4f362407375516e">_renderWindow</a>-&gt;<a class="code" href="class_incremental_engine_1_1_render_window.html#ab75d5cbf5ecc4e19bb84b4b08fb994fa">GetScreenNear</a>(),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="class_incremental_engine_1_1_drawable.html#a7f6924d11d3f845ec4f362407375516e">_renderWindow</a>-&gt;<a class="code" href="class_incremental_engine_1_1_render_window.html#a938d27b413adcfb3b35083eeaac038b9">GetScreenDepth</a>()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#ac1f2f5836a26e94cfcfeebf83bfe140a">_fontWrapperMatrix</a> = <a class="code" href="class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd">GetWorldMatrix</a>(<span class="keyword">this</span>) * orthoProjectionMatrix;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">_fontWrapperNeedUpdate</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a86e4cb9f7852526fb1191a82fa2cad99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e4cb9f7852526fb1191a82fa2cad99">&#9670;&nbsp;</a></span>_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t IncrementalEngine::Text::_color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00059">59</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="af8b4981085f3319fc18aeaa43b62fd86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b4981085f3319fc18aeaa43b62fd86">&#9670;&nbsp;</a></span>_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT IncrementalEngine::Text::_flags</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00060">60</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="a348f8a3b0734e2e84708e00ce86a3296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348f8a3b0734e2e84708e00ce86a3296">&#9670;&nbsp;</a></span>_fontFamily</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring IncrementalEngine::Text::_fontFamily</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00057">57</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="a1a7b66d192b27fb80642d8080b90c592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7b66d192b27fb80642d8080b90c592">&#9670;&nbsp;</a></span>_fontSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IncrementalEngine::Text::_fontSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00058">58</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="adf073d05853c6a1b4e9c5850b7abe1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf073d05853c6a1b4e9c5850b7abe1ab">&#9670;&nbsp;</a></span>_fontWrapper</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IFW1FontWrapper* IncrementalEngine::Text::_fontWrapper</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00053">53</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="ac1f2f5836a26e94cfcfeebf83bfe140a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f2f5836a26e94cfcfeebf83bfe140a">&#9670;&nbsp;</a></span>_fontWrapperMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX IncrementalEngine::Text::_fontWrapperMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00054">54</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="a0d05c7dd9906d357f208b821f062da92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d05c7dd9906d357f208b821f062da92">&#9670;&nbsp;</a></span>_fontWrapperNeedUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IncrementalEngine::Text::_fontWrapperNeedUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00062">62</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="a220275f26689b744bf3029bec5aa51aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220275f26689b744bf3029bec5aa51aa">&#9670;&nbsp;</a></span>_previousTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_incremental_engine_1_1_transform.html">Transform</a> IncrementalEngine::Text::_previousTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00063">63</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
+
+</div>
+</div>
+<a id="af6c338cf1592f7259dab8a98751a1e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c338cf1592f7259dab8a98751a1e2d">&#9670;&nbsp;</a></span>_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring IncrementalEngine::Text::_value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_text_8h_source.html#l00056">56</a> of file <a class="el" href="_text_8h_source.html">Text.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a220275f26689b744bf3029bec5aa51aa"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a220275f26689b744bf3029bec5aa51aa">IncrementalEngine::Text::_previousTransform</a></div><div class="ttdeci">Transform _previousTransform</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00063">Text.h:63</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_drawable_html_accdcbebd67d3619c47915700cceb3bda"><div class="ttname"><a href="class_incremental_engine_1_1_drawable.html#accdcbebd67d3619c47915700cceb3bda">IncrementalEngine::Drawable::_device</a></div><div class="ttdeci">ID3D11Device * _device</div><div class="ttdef"><b>Definition:</b> <a href="_drawable_8h_source.html#l00018">Drawable.h:18</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa1392cc0f828e3189aa11e09e2c772c1f"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa1392cc0f828e3189aa11e09e2c772c1f">IncrementalEngine::Text::TOP_LEFT</a></div><div class="ttdeci">@ TOP_LEFT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00019">Text.h:19</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa12d485d0d3091d11480e0d85c7086895"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa12d485d0d3091d11480e0d85c7086895">IncrementalEngine::Text::TOP_CENTER</a></div><div class="ttdeci">@ TOP_CENTER</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00020">Text.h:20</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a50a860fc9e4ebd6d993502ff17adb701"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a50a860fc9e4ebd6d993502ff17adb701">IncrementalEngine::Text::SetTextColor</a></div><div class="ttdeci">void SetTextColor(const float r, const float g, const float b, const float a=1)</div><div class="ttdef"><b>Definition:</b> <a href="_text_8cpp_source.html#l00079">Text.cpp:79</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_adf073d05853c6a1b4e9c5850b7abe1ab"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#adf073d05853c6a1b4e9c5850b7abe1ab">IncrementalEngine::Text::_fontWrapper</a></div><div class="ttdeci">IFW1FontWrapper * _fontWrapper</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00053">Text.h:53</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_actor_html_aac79ae6d406d5ea75e0948917e307509"><div class="ttname"><a href="class_incremental_engine_1_1_actor.html#aac79ae6d406d5ea75e0948917e307509">IncrementalEngine::Actor::GetWorldTransform</a></div><div class="ttdeci">const Transform GetWorldTransform()</div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00093">Actor.cpp:93</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aaea2f239977f220b87216788a3d75746d"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aaea2f239977f220b87216788a3d75746d">IncrementalEngine::Text::CENTER_RIGHT</a></div><div class="ttdeci">@ CENTER_RIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00024">Text.h:24</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa64eeefa305fe8fefa4e24276474fc93f"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa64eeefa305fe8fefa4e24276474fc93f">IncrementalEngine::Text::BOTTOM_RIGHT</a></div><div class="ttdeci">@ BOTTOM_RIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00028">Text.h:27</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a9a92358a43147023cdc8f1dc1ad634dd"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a9a92358a43147023cdc8f1dc1ad634dd">IncrementalEngine::Text::GetWorldMatrix</a></div><div class="ttdeci">XMMATRIX GetWorldMatrix(Actor *actor)</div><div class="ttdef"><b>Definition:</b> <a href="_text_8cpp_source.html#l00159">Text.cpp:159</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_af6c338cf1592f7259dab8a98751a1e2d"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#af6c338cf1592f7259dab8a98751a1e2d">IncrementalEngine::Text::_value</a></div><div class="ttdeci">std::wstring _value</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00056">Text.h:56</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa0a37d14eb0347a17ce7d1c64b92e2ac0"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa0a37d14eb0347a17ce7d1c64b92e2ac0">IncrementalEngine::Text::BOTTOM_LEFT</a></div><div class="ttdeci">@ BOTTOM_LEFT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00025">Text.h:25</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ac71755916ef967b4d2203df79be989fb"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ac71755916ef967b4d2203df79be989fb">IncrementalEngine::Text::GetTextExtent</a></div><div class="ttdeci">D3DXVECTOR2 GetTextExtent()</div><div class="ttdef"><b>Definition:</b> <a href="_text_8cpp_source.html#l00145">Text.cpp:145</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_font_factory_html_a462598c952a9ea1b2a1fc13639c986d5"><div class="ttname"><a href="class_incremental_engine_1_1_font_factory.html#a462598c952a9ea1b2a1fc13639c986d5">IncrementalEngine::FontFactory::Get</a></div><div class="ttdeci">static IFW1Factory * Get()</div><div class="ttdef"><b>Definition:</b> <a href="_font_factory_8cpp_source.html#l00008">FontFactory.cpp:8</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ac1f2f5836a26e94cfcfeebf83bfe140a"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ac1f2f5836a26e94cfcfeebf83bfe140a">IncrementalEngine::Text::_fontWrapperMatrix</a></div><div class="ttdeci">XMMATRIX _fontWrapperMatrix</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00054">Text.h:54</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_af8b4981085f3319fc18aeaa43b62fd86"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#af8b4981085f3319fc18aeaa43b62fd86">IncrementalEngine::Text::_flags</a></div><div class="ttdeci">UINT _flags</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00060">Text.h:60</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa29f840448e8b828e0c64de8e83da19ab"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa29f840448e8b828e0c64de8e83da19ab">IncrementalEngine::Text::BOTTOM_CENTER</a></div><div class="ttdeci">@ BOTTOM_CENTER</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00026">Text.h:26</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a1a7b66d192b27fb80642d8080b90c592"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a1a7b66d192b27fb80642d8080b90c592">IncrementalEngine::Text::_fontSize</a></div><div class="ttdeci">float _fontSize</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00058">Text.h:58</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_actor_html_a4088c77027ed8329108aa17d9c1fa3ec"><div class="ttname"><a href="class_incremental_engine_1_1_actor.html#a4088c77027ed8329108aa17d9c1fa3ec">IncrementalEngine::Actor::Center</a></div><div class="ttdeci">void Center()</div><div class="ttdef"><b>Definition:</b> <a href="_actor_8cpp_source.html#l00077">Actor.cpp:77</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a348f8a3b0734e2e84708e00ce86a3296"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a348f8a3b0734e2e84708e00ce86a3296">IncrementalEngine::Text::_fontFamily</a></div><div class="ttdeci">std::wstring _fontFamily</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00057">Text.h:57</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a0d05c7dd9906d357f208b821f062da92"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a0d05c7dd9906d357f208b821f062da92">IncrementalEngine::Text::_fontWrapperNeedUpdate</a></div><div class="ttdeci">bool _fontWrapperNeedUpdate</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00062">Text.h:62</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_a86e4cb9f7852526fb1191a82fa2cad99"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#a86e4cb9f7852526fb1191a82fa2cad99">IncrementalEngine::Text::_color</a></div><div class="ttdeci">std::uint32_t _color</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00059">Text.h:59</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa436ba5d7e14bef9e5c5a1eb95420b4e0"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa436ba5d7e14bef9e5c5a1eb95420b4e0">IncrementalEngine::Text::CENTER_LEFT</a></div><div class="ttdeci">@ CENTER_LEFT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00022">Text.h:22</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a938d27b413adcfb3b35083eeaac038b9"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a938d27b413adcfb3b35083eeaac038b9">IncrementalEngine::RenderWindow::GetScreenDepth</a></div><div class="ttdeci">float GetScreenDepth()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00130">RenderWindow.cpp:130</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a56d90edc6c6a059f88c0337c5687d3ca"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a56d90edc6c6a059f88c0337c5687d3ca">IncrementalEngine::RenderWindow::GetScreenHeight</a></div><div class="ttdeci">int GetScreenHeight()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00120">RenderWindow.cpp:120</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa0d96042f5596d4164e170e3933b165da"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa0d96042f5596d4164e170e3933b165da">IncrementalEngine::Text::TOP_RIGHT</a></div><div class="ttdeci">@ TOP_RIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00021">Text.h:21</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_drawable_html_a7f6924d11d3f845ec4f362407375516e"><div class="ttname"><a href="class_incremental_engine_1_1_drawable.html#a7f6924d11d3f845ec4f362407375516e">IncrementalEngine::Drawable::_renderWindow</a></div><div class="ttdeci">RenderWindow * _renderWindow</div><div class="ttdef"><b>Definition:</b> <a href="_drawable_8h_source.html#l00016">Drawable.h:16</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_a4649083a968f518de76e0ba42aeba7d4"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#a4649083a968f518de76e0ba42aeba7d4">IncrementalEngine::RenderWindow::GetScreenWidth</a></div><div class="ttdeci">int GetScreenWidth()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00115">RenderWindow.cpp:115</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_text_html_ae06b428eb1d6e07c25e7e97a5f47559aa60ed2ea00c32e3c5f78107521fb8056c"><div class="ttname"><a href="class_incremental_engine_1_1_text.html#ae06b428eb1d6e07c25e7e97a5f47559aa60ed2ea00c32e3c5f78107521fb8056c">IncrementalEngine::Text::CENTER</a></div><div class="ttdeci">@ CENTER</div><div class="ttdef"><b>Definition:</b> <a href="_text_8h_source.html#l00023">Text.h:23</a></div></div>
+<div class="ttc" id="aclass_incremental_engine_1_1_render_window_html_ab75d5cbf5ecc4e19bb84b4b08fb994fa"><div class="ttname"><a href="class_incremental_engine_1_1_render_window.html#ab75d5cbf5ecc4e19bb84b4b08fb994fa">IncrementalEngine::RenderWindow::GetScreenNear</a></div><div class="ttdeci">float GetScreenNear()</div><div class="ttdef"><b>Definition:</b> <a href="_render_window_8cpp_source.html#l00125">RenderWindow.cpp:125</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -10,5 +10,6 @@ var struct_incremental_engine_1_1_float_rect =
     [ "top", "struct_incremental_engine_1_1_float_rect.html#a0aac74d0e03fd99b852d32c8c9efa0fa", null ],
     [ "top", "struct_incremental_engine_1_1_float_rect.html#a13ba43240173b3f0f4346bc1762c4935", null ],
     [ "width", "struct_incremental_engine_1_1_float_rect.html#a510d4b738367e1fa71b2227e67ccce1e", null ],
-    [ "width", "struct_incremental_engine_1_1_float_rect.html#a978c11ea11e33428b0d48f8ea5e7c507", null ]
+    [ "width", "struct_incremental_engine_1_1_float_rect.html#a978c11ea11e33428b0d48f8ea5e7c507", null ],
+    [ "rect", "struct_incremental_engine_1_1_float_rect.html#afe4458d0edbf2b523dcf57ea91f17c4e", null ]
 ];
